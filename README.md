@@ -37,7 +37,7 @@ Skrip menyalin berkas baru berdasarkan SHA-256 dan tidak pernah menghapus versi 
 
 ## Versi publik
 
-Repo ini private dan menyimpan semuanya. Versi publiknya ada di `github.com/wiraperdana/kasdad-skill`, tanpa materi pihak ketiga: slide dosen, worksheet, soal, catatan kelas, ekstrak teks slide, dan transkripsi slide bergambar. Daftarnya ada di `.publik-kecuali`.
+Repo ini private dan menyimpan semuanya. Versi publiknya ada di `github.com/wiraperdana/data-science-skill`, tanpa materi pihak ketiga: slide dosen, worksheet, soal, catatan kelas, ekstrak teks slide, dan transkripsi slide bergambar. Daftarnya ada di `.publik-kecuali`.
 
 Terbitkan ulang setelah ada perubahan:
 
