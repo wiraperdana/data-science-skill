@@ -1,0 +1,997 @@
+{
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "00-57db37f4cf66",
+      "topics": [
+        "00"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[00] Course Info_updated.PDF",
+      "original_path": "[00] Course Info_updated.PDF",
+      "sha256": "57db37f4cf66aae36ab0c3a3baba19db2739e9f236632228a8713b01c979a4a2",
+      "bytes": 1845351,
+      "added_on": "2026-10-11",
+      "pages": 14,
+      "text_path": "sources/text/00-57db37f4cf66.txt"
+    },
+    {
+      "id": "00-c778bb5e68eb",
+      "topics": [
+        "00"
+      ],
+      "kind": "syllabus",
+      "path": "sources/files/silabus-kasdd-ganjil-2026-2027.md",
+      "original_path": "silabus-kasdd-ganjil-2026-2027.md",
+      "sha256": "c778bb5e68eb32e7cde7e733e78219f822b48c8772b78be2a3ca496ff3e713c5",
+      "bytes": 11055,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/silabus-kasdd-ganjil-2026-2027.md"
+    },
+    {
+      "id": "01-484524620373",
+      "topics": [
+        "01"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - 1 - 24 Agustus 2026 - What is AI_.md",
+      "original_path": "notes/[MIK] KASDAD - 1 - 24 Agustus 2026 - What is AI_.md",
+      "sha256": "48452462037333faa8927c4925c02ee3bbf816f803334676b49684312d11e338",
+      "bytes": 25984,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 1 - 24 Agustus 2026 - What is AI_.md"
+    },
+    {
+      "id": "01-d7eced8437de",
+      "topics": [
+        "01"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 1 - 24 Agustus 2026 - What is AI - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 1 - 24 Agustus 2026 - What is AI - Komprehensif.md",
+      "sha256": "d7eced8437de6d98884fc4d3d65b41cae6fe8c6ae1677232bb53bfeb44055b07",
+      "bytes": 24035,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 1 - 24 Agustus 2026 - What is AI - Komprehensif.md"
+    },
+    {
+      "id": "01-c0443b0333ec",
+      "topics": [
+        "01"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[01] What is AI_updated.pdf",
+      "original_path": "[01] What is AI_updated.pdf",
+      "sha256": "c0443b0333ece4eacc79ae53e225ae185defce66eced5fdd7a8905896316b243",
+      "bytes": 3147713,
+      "added_on": "2026-10-11",
+      "pages": 52,
+      "text_path": "sources/text/01-c0443b0333ec.txt"
+    },
+    {
+      "id": "02-7151e2fe888e",
+      "topics": [
+        "02"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - 2 - 26 Agustus 2026 - Intro to Data Science .md",
+      "original_path": "notes/[MIK] KASDAD - 2 - 26 Agustus 2026 - Intro to Data Science .md",
+      "sha256": "7151e2fe888e22ba601fabdd4cdb9c6d9279620cc7176893188bb07c8c15e91c",
+      "bytes": 13203,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 2 - 26 Agustus 2026 - Intro to Data Science .md"
+    },
+    {
+      "id": "02-1344a9210703",
+      "topics": [
+        "02"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 2 - 26 Agustus 2026 - Intro to Data Science - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 2 - 26 Agustus 2026 - Intro to Data Science - Komprehensif.md",
+      "sha256": "1344a921070376c6735bea6bff8631477aa1f6dc6934a1a3db3ab47b4d8f0ee8",
+      "bytes": 25041,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 2 - 26 Agustus 2026 - Intro to Data Science - Komprehensif.md"
+    },
+    {
+      "id": "02-ae63d44cc98a",
+      "topics": [
+        "02"
+      ],
+      "kind": "raw-transcript",
+      "path": "sources/files/_raw/02-what-is-data-science.md",
+      "original_path": "_raw/02-what-is-data-science.md",
+      "sha256": "ae63d44cc98a1ebfa15427e07772958cca36cf642ab20aa4d3c45d1fcb8ffdc7",
+      "bytes": 21884,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_raw/02-what-is-data-science.md"
+    },
+    {
+      "id": "02-d524c39f81e8",
+      "topics": [
+        "02"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[02] What is Data Science_updated.pdf",
+      "original_path": "[02] What is Data Science_updated.pdf",
+      "sha256": "d524c39f81e8b2ef378ebc4eb8fa648e15a532d6ea7bb9b095f7c7a07b6963fc",
+      "bytes": 2262019,
+      "added_on": "2026-10-11",
+      "pages": 50,
+      "text_path": "sources/text/02-d524c39f81e8.txt"
+    },
+    {
+      "id": "03-0e38d6251fee",
+      "topics": [
+        "03"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - 3 - 31 Agustus 2026 - Pengumpulan Data, EDA, Statistik Deskriptif, dan Visualisasi Data.md",
+      "original_path": "notes/[MIK] KASDAD - 3 - 31 Agustus 2026 - Pengumpulan Data, EDA, Statistik Deskriptif, dan Visualisasi Data.md",
+      "sha256": "0e38d6251fee0491c2fc4f6006ba540fa2bf215b86fc33c55d24425927161a18",
+      "bytes": 13442,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 3 - 31 Agustus 2026 - Pengumpulan Data, EDA, Statistik Deskriptif, dan Visualisasi Data.md"
+    },
+    {
+      "id": "03-19ac252fff2c",
+      "topics": [
+        "03",
+        "04"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - 4 - 2 September 2026 - Visualisasi Data, Exploratory Data Analysis, dan Data Preparation.md",
+      "original_path": "notes/[MIK] KASDAD - 4 - 2 September 2026 - Visualisasi Data, Exploratory Data Analysis, dan Data Preparation.md",
+      "sha256": "19ac252fff2cee4eb054f7e35a18ed53a6c6d57d6b062d2169e019342201f6df",
+      "bytes": 14187,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 4 - 2 September 2026 - Visualisasi Data, Exploratory Data Analysis, dan Data Preparation.md"
+    },
+    {
+      "id": "03-d8f1e105b773",
+      "topics": [
+        "03"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 3 - 31 Agustus 2026 - Pengumpulan Data, EDA, Statistik Deskriptif, dan Visualisasi Data - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 3 - 31 Agustus 2026 - Pengumpulan Data, EDA, Statistik Deskriptif, dan Visualisasi Data - Komprehensif.md",
+      "sha256": "d8f1e105b7735bc5a957a16e542cd6e875f7b5810a1eafd84db3b5f8148540be",
+      "bytes": 22107,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 3 - 31 Agustus 2026 - Pengumpulan Data, EDA, Statistik Deskriptif, dan Visualisasi Data - Komprehensif.md"
+    },
+    {
+      "id": "03-9255e3489269",
+      "topics": [
+        "03",
+        "04"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 4 - 2 September 2026 - Visualisasi Data, Exploratory Data Analysis, dan Data Preparation - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 4 - 2 September 2026 - Visualisasi Data, Exploratory Data Analysis, dan Data Preparation - Komprehensif.md",
+      "sha256": "9255e348926968eba86974aca8e67f2304d798984486d79b77f6d4a7e6228a29",
+      "bytes": 22194,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 4 - 2 September 2026 - Visualisasi Data, Exploratory Data Analysis, dan Data Preparation - Komprehensif.md"
+    },
+    {
+      "id": "03-4daf5ca68471",
+      "topics": [
+        "03"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[03] Data Collection, EDA, and Statistics_updated.pdf",
+      "original_path": "[03] Data Collection, EDA, and Statistics_updated.pdf",
+      "sha256": "4daf5ca68471d49096b185a46d0d7fb123121e82282de3d082d15ba7adf26265",
+      "bytes": 3634897,
+      "added_on": "2026-10-11",
+      "pages": 81,
+      "text_path": "sources/text/03-4daf5ca68471.txt"
+    },
+    {
+      "id": "04-549fdf9a5108",
+      "topics": [
+        "04"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[04] Data Preparation_updated.pdf",
+      "original_path": "[04] Data Preparation_updated.pdf",
+      "sha256": "549fdf9a51089286bb2c57e68be971e2210925b487a9637d400536bdbb800c7a",
+      "bytes": 1436758,
+      "added_on": "2026-10-11",
+      "pages": 58,
+      "text_path": "sources/text/04-549fdf9a5108.txt"
+    },
+    {
+      "id": "05-ee58a4bdb6ae",
+      "topics": [
+        "05"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - 5 - 7 September 2026 - Feature Selection.md",
+      "original_path": "notes/[MIK] KASDAD - 5 - 7 September 2026 - Feature Selection.md",
+      "sha256": "ee58a4bdb6aec832b00614564d89b141d7e9f63f8a5e700c32acfa7bc02ea8b8",
+      "bytes": 12663,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 5 - 7 September 2026 - Feature Selection.md"
+    },
+    {
+      "id": "05-11a81d6baf47",
+      "topics": [
+        "05"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 5 - 7 September 2026 - Feature Selection - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 5 - 7 September 2026 - Feature Selection - Komprehensif.md",
+      "sha256": "11a81d6baf478d7325e85944ef3907122718594da6875f89067b073372b36e19",
+      "bytes": 26028,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 5 - 7 September 2026 - Feature Selection - Komprehensif.md"
+    },
+    {
+      "id": "05-e760cf1adbac",
+      "topics": [
+        "05"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[05] Feature Engineering and Selection_updated.pdf",
+      "original_path": "[05] Feature Engineering and Selection_updated.pdf",
+      "sha256": "e760cf1adbace1566ec0b12dc6cf332a3279d1e5c389d2b3e77d674b55b87ed4",
+      "bytes": 2412966,
+      "added_on": "2026-10-11",
+      "pages": 64,
+      "text_path": "sources/text/05-e760cf1adbac.txt"
+    },
+    {
+      "id": "06-c8fe17606347",
+      "topics": [
+        "06"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/soal-pca.pdf",
+      "original_path": "soal-pca.pdf",
+      "sha256": "c8fe176063477ea9611ca00009242ef33ec3b151dc8ec3c3ef5aa57381b3718a",
+      "bytes": 781864,
+      "added_on": "2026-10-11",
+      "pages": 2,
+      "text_path": "sources/text/06-c8fe17606347.txt"
+    },
+    {
+      "id": "06-0c2a5612b469",
+      "topics": [
+        "06",
+        "07a"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/worksheet.png",
+      "original_path": "worksheet.png",
+      "sha256": "0c2a5612b469ca7a63302997f3ca69cfa1181c0fe836242fbbcbc905c05a740a",
+      "bytes": 1317046,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "06-99b8376d4146",
+      "topics": [
+        "06"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - 6 - 9 September 2026 - Reduksi Dimensi.md",
+      "original_path": "notes/[MIK] KASDAD - 6 - 9 September 2026 - Reduksi Dimensi.md",
+      "sha256": "99b8376d414625dbb0bbde7c1231fd9ee40ec585dc5ce083a4314ab3f6b9ebb5",
+      "bytes": 11444,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 6 - 9 September 2026 - Reduksi Dimensi.md"
+    },
+    {
+      "id": "06-d5e8437c1939",
+      "topics": [
+        "06"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 6 - 9 September 2026 - Reduksi Dimensi - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 6 - 9 September 2026 - Reduksi Dimensi - Komprehensif.md",
+      "sha256": "d5e8437c1939e3edc81b327a60871bb02232de57221a03917488c2ddae3d3deb",
+      "bytes": 17049,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 6 - 9 September 2026 - Reduksi Dimensi - Komprehensif.md"
+    },
+    {
+      "id": "06-1468bed19acd",
+      "topics": [
+        "06",
+        "07a"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 7 - Latihan PCA + Decision Tree - komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 7 - Latihan PCA + Decision Tree - komprehensif.md",
+      "sha256": "1468bed19acde78e1700bb0a2e5ed82dd5e0e4c603a87994ce18c86d3d2bba9a",
+      "bytes": 17953,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 7 - Latihan PCA + Decision Tree - komprehensif.md"
+    },
+    {
+      "id": "06-738fe30cd8a7",
+      "topics": [
+        "06"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[06] Dimensionality Reduction and PCA_updated.pdf",
+      "original_path": "[06] Dimensionality Reduction and PCA_updated.pdf",
+      "sha256": "738fe30cd8a78c849adb6536a031084f14dce8265fdf02165f256656e7b855a2",
+      "bytes": 2078209,
+      "added_on": "2026-10-11",
+      "pages": 53,
+      "text_path": "sources/text/06-738fe30cd8a7.txt"
+    },
+    {
+      "id": "06-9a8878bc7c19",
+      "topics": [
+        "06"
+      ],
+      "kind": "worked-answer",
+      "path": "sources/files/_output/jawaban-soal-pca.html",
+      "original_path": "_output/jawaban-soal-pca.html",
+      "sha256": "9a8878bc7c19b3aa61e52c63f6de9244429aa50f37af1642b93db5c601a022f6",
+      "bytes": 55489,
+      "added_on": "2026-10-11",
+      "text_path": "sources/text/06-9a8878bc7c19.txt"
+    },
+    {
+      "id": "06-dc78d02ec1db",
+      "topics": [
+        "06"
+      ],
+      "kind": "worked-answer",
+      "path": "sources/files/_output/jawaban-soal-pca.md",
+      "original_path": "_output/jawaban-soal-pca.md",
+      "sha256": "dc78d02ec1db8cae23ae305c75092bad74ea8321e6d97a61cf6ad0a873ff20fc",
+      "bytes": 8504,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/jawaban-soal-pca.md"
+    },
+    {
+      "id": "06-aedbd9bbe88c",
+      "topics": [
+        "06",
+        "07a",
+        "08"
+      ],
+      "kind": "worked-answer",
+      "path": "sources/files/_output/jawaban-worksheet-pca-cart.html",
+      "original_path": "_output/jawaban-worksheet-pca-cart.html",
+      "sha256": "aedbd9bbe88cc840bc55416c0e85cec7e7f64cd996972c81ee8e3e2ae4f63547",
+      "bytes": 120376,
+      "added_on": "2026-10-11",
+      "text_path": "sources/text/06-aedbd9bbe88c.txt"
+    },
+    {
+      "id": "07a-7debd6e0cf6e",
+      "topics": [
+        "07a",
+        "08",
+        "09",
+        "10"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - 8 - Decision Tree, Bagging, Boosting, Performance Metrics Evaluation.md",
+      "original_path": "notes/[MIK] KASDAD - 8 - Decision Tree, Bagging, Boosting, Performance Metrics Evaluation.md",
+      "sha256": "7debd6e0cf6e0feddb3049e4b897105701205546e83c401bdaf1d56516e0ba1b",
+      "bytes": 15090,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 8 - Decision Tree, Bagging, Boosting, Performance Metrics Evaluation.md"
+    },
+    {
+      "id": "07a-296f6a33659e",
+      "topics": [
+        "07a",
+        "08",
+        "09",
+        "10"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - 8 - Decision Tree, Bagging, Boosting, Performance Metrics Evaluation - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - 8 - Decision Tree, Bagging, Boosting, Performance Metrics Evaluation - Komprehensif.md",
+      "sha256": "296f6a33659e2c5b959d58980343c6926cb6ce2d3cb7b8b69068e0fc31dc84df",
+      "bytes": 24515,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - 8 - Decision Tree, Bagging, Boosting, Performance Metrics Evaluation - Komprehensif.md"
+    },
+    {
+      "id": "07a-bbfed18f211f",
+      "topics": [
+        "07a"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[07a] CART_updated.pdf",
+      "original_path": "[07a] CART_updated.pdf",
+      "sha256": "bbfed18f211fbc09650647ddd78ba4e44483179369c7fdaaafb4650df504bb84",
+      "bytes": 4265312,
+      "added_on": "2026-10-11",
+      "pages": 64,
+      "text_path": "sources/text/07a-bbfed18f211f.txt"
+    },
+    {
+      "id": "08-2514671c6ca5",
+      "topics": [
+        "08"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[08] Random Forests_updated.pdf",
+      "original_path": "[08] Random Forests_updated.pdf",
+      "sha256": "2514671c6ca5023ebb80b73a3a7225310fa68900377782db38c3602d42cbf87c",
+      "bytes": 1454438,
+      "added_on": "2026-10-11",
+      "pages": 33,
+      "text_path": "sources/text/08-2514671c6ca5.txt"
+    },
+    {
+      "id": "09-ad7ac8719883",
+      "topics": [
+        "09"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - Metrik Evaluasi Machine Learning.md",
+      "original_path": "notes/[MIK] KASDAD - Metrik Evaluasi Machine Learning.md",
+      "sha256": "ad7ac8719883730fb7ddeea433090ae57bb199cebab3969e7ef54e3e0c1d086b",
+      "bytes": 1434,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Metrik Evaluasi Machine Learning.md"
+    },
+    {
+      "id": "09-43b9c2138a6b",
+      "topics": [
+        "09"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - Metrik Evaluasi Machine Learning - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - Metrik Evaluasi Machine Learning - Komprehensif.md",
+      "sha256": "43b9c2138a6b6a84a4be96cde725c0646450d6a15e8134d9c3a0375f0768733c",
+      "bytes": 16018,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Metrik Evaluasi Machine Learning - Komprehensif.md"
+    },
+    {
+      "id": "09-b96c1ee48dce",
+      "topics": [
+        "09"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-09-supervised-model-evaluation-variasi-2.md",
+      "original_path": "_output/soal-09-supervised-model-evaluation-variasi-2.md",
+      "sha256": "b96c1ee48dce20cb4a94b951b39259c8578609ff366ec9556d67619f6fb5cf6d",
+      "bytes": 4492,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-09-supervised-model-evaluation-variasi-2.md"
+    },
+    {
+      "id": "09-650039b763ae",
+      "topics": [
+        "09"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-09-supervised-model-evaluation.md",
+      "original_path": "_output/soal-09-supervised-model-evaluation.md",
+      "sha256": "650039b763aed502fae342c3aa2b984230ef492708dd5e358f26f0ce3065c99c",
+      "bytes": 7217,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-09-supervised-model-evaluation.md"
+    },
+    {
+      "id": "09-aa69b2f22d98",
+      "topics": [
+        "09",
+        "10",
+        "11",
+        "12"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-dan-pembahasan-kasdad-topik-09-12.pdf",
+      "original_path": "_output/soal-dan-pembahasan-kasdad-topik-09-12.pdf",
+      "sha256": "aa69b2f22d983f7ff8c98ad807d8c5ac2a3d28aa24c468e7cdb3485899c970b3",
+      "bytes": 367107,
+      "added_on": "2026-10-11",
+      "pages": 22,
+      "text_path": "sources/text/09-aa69b2f22d98.txt"
+    },
+    {
+      "id": "09-f651a495750a",
+      "topics": [
+        "09"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[09] Supervised Model Evaluation_updated.pdf",
+      "original_path": "[09] Supervised Model Evaluation_updated.pdf",
+      "sha256": "f651a495750aac66f348da9566c1a6fa6fd4b722cca0fe4ab8ca82eab87307ed",
+      "bytes": 2500572,
+      "added_on": "2026-10-11",
+      "pages": 60,
+      "text_path": "sources/text/09-f651a495750a.txt"
+    },
+    {
+      "id": "10-5d5ad71d7994",
+      "topics": [
+        "10"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-10-bias-variance-tradeoff-variasi-2.md",
+      "original_path": "_output/soal-10-bias-variance-tradeoff-variasi-2.md",
+      "sha256": "5d5ad71d799424d5e32c61e3601a535b4ca9d7c119c784ef66740e2ae8e70c6d",
+      "bytes": 4849,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-10-bias-variance-tradeoff-variasi-2.md"
+    },
+    {
+      "id": "10-2974ae5dc654",
+      "topics": [
+        "10"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-10-bias-variance-tradeoff.md",
+      "original_path": "_output/soal-10-bias-variance-tradeoff.md",
+      "sha256": "2974ae5dc6543d11e35b3d8202e39e40cd77d4c6bb73f569020af044e61a516d",
+      "bytes": 6537,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-10-bias-variance-tradeoff.md"
+    },
+    {
+      "id": "10-95aed92b9193",
+      "topics": [
+        "10"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[10] Bias-Variance Tradeoff_updated.pdf",
+      "original_path": "[10] Bias-Variance Tradeoff_updated.pdf",
+      "sha256": "95aed92b91932d13bd848aa410bf053f4c92942cc747999637fafcd6cf6b29e5",
+      "bytes": 2560701,
+      "added_on": "2026-10-11",
+      "pages": 37,
+      "text_path": "sources/text/10-95aed92b9193.txt"
+    },
+    {
+      "id": "11-a26eeb8c03cc",
+      "topics": [
+        "11"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - KNN.md",
+      "original_path": "notes/[MIK] KASDAD - KNN.md",
+      "sha256": "a26eeb8c03cc09fea65da5f30dfe9845dbfccd0e570a1c19045b1f30687c8765",
+      "bytes": 15528,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - KNN.md"
+    },
+    {
+      "id": "11-57b367cb0653",
+      "topics": [
+        "11"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - KNN - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - KNN - Komprehensif.md",
+      "sha256": "57b367cb0653aa3cfa41d8ad29b9c750c023481e4e47d4ec8e41a80e7012f2c5",
+      "bytes": 22145,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - KNN - Komprehensif.md"
+    },
+    {
+      "id": "11-bb7ec172fc52",
+      "topics": [
+        "11"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-11-knn-classification-regression-variasi-2.md",
+      "original_path": "_output/soal-11-knn-classification-regression-variasi-2.md",
+      "sha256": "bb7ec172fc525fa00fb11b88e1eeefc42b43630898ed45736de1ea1ec214de45",
+      "bytes": 4222,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-11-knn-classification-regression-variasi-2.md"
+    },
+    {
+      "id": "11-09c1f04f9478",
+      "topics": [
+        "11"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-11-knn-classification-regression.md",
+      "original_path": "_output/soal-11-knn-classification-regression.md",
+      "sha256": "09c1f04f94787565c25f5a6d391a7dcab15a18c7640d49f45f82e0336e63ee73",
+      "bytes": 5110,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-11-knn-classification-regression.md"
+    },
+    {
+      "id": "11-19b289808602",
+      "topics": [
+        "11"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-11-knn-exercise-11a.md",
+      "original_path": "_output/soal-11-knn-exercise-11a.md",
+      "sha256": "19b289808602980119b3a155b6d6f3c63e460d2e9e75f09f9cc0775985ab73b6",
+      "bytes": 10001,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-11-knn-exercise-11a.md"
+    },
+    {
+      "id": "11-30e042d057d2",
+      "topics": [
+        "11"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[11] KNN Classification Regression_2026_LR.pdf",
+      "original_path": "[11] KNN Classification Regression_2026_LR.pdf",
+      "sha256": "30e042d057d215fd70ad18251739f6d294f158fe04e26a008f4bf98df01e06b3",
+      "bytes": 1256418,
+      "added_on": "2026-10-11",
+      "pages": 42,
+      "text_path": "sources/text/11-30e042d057d2.txt"
+    },
+    {
+      "id": "11-008f57e6d6fa",
+      "topics": [
+        "11"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[11a] KNN-Exercise Key-LR.pdf",
+      "original_path": "[11a] KNN-Exercise Key-LR.pdf",
+      "sha256": "008f57e6d6fa1ad3c3511336ea4f11fe4dcd85f1d1638979fa70fba9d972c9d8",
+      "bytes": 371269,
+      "added_on": "2026-10-11",
+      "pages": 18,
+      "text_path": "sources/text/11-008f57e6d6fa.txt"
+    },
+    {
+      "id": "12-ddd37fbd8566",
+      "topics": [
+        "12"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 1.md",
+      "original_path": "notes/[MIK] KASDAD - Imbalance Classification 1.md",
+      "sha256": "ddd37fbd856687a0e3f3082dcedd58ca1f180a2a21a95192ef846ff235afe74f",
+      "bytes": 6887,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 1.md"
+    },
+    {
+      "id": "12-8b8a9f41d1f4",
+      "topics": [
+        "12"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 2.md",
+      "original_path": "notes/[MIK] KASDAD - Imbalance Classification 2.md",
+      "sha256": "8b8a9f41d1f466541cd62035facd2cdda46573fff779ff61b1ea5551fadcd203",
+      "bytes": 10754,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 2.md"
+    },
+    {
+      "id": "12-164e047874b5",
+      "topics": [
+        "12"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - Imbalanced Classification 3.md",
+      "original_path": "notes/[MIK] KASDAD - Imbalanced Classification 3.md",
+      "sha256": "164e047874b587cc87054de96f30a538f0fb52e8e19ebd9af4356e2d1c3f3797",
+      "bytes": 7965,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Imbalanced Classification 3.md"
+    },
+    {
+      "id": "12-a6069dd3a369",
+      "topics": [
+        "12"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 1 - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - Imbalance Classification 1 - Komprehensif.md",
+      "sha256": "a6069dd3a369348dba374f8361b6c8026ecd5490fd90bd9966b5096d09d4a32c",
+      "bytes": 15805,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 1 - Komprehensif.md"
+    },
+    {
+      "id": "12-08d9b7c4d73c",
+      "topics": [
+        "12"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 2 - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - Imbalance Classification 2 - Komprehensif.md",
+      "sha256": "08d9b7c4d73cab09831885f0847d9a96b48a64944532a6de2eed4a24f5432346",
+      "bytes": 21074,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Imbalance Classification 2 - Komprehensif.md"
+    },
+    {
+      "id": "12-1758cbd97cae",
+      "topics": [
+        "12"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - Imbalanced Classification 3 - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - Imbalanced Classification 3 - Komprehensif.md",
+      "sha256": "1758cbd97caef5ad6b1b44b4694e51dbf68ad5d7d98919e418390496a3d7d729",
+      "bytes": 12623,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Imbalanced Classification 3 - Komprehensif.md"
+    },
+    {
+      "id": "12-f14b45571d61",
+      "topics": [
+        "12"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-12-imbalanced-classification-variasi-2.md",
+      "original_path": "_output/soal-12-imbalanced-classification-variasi-2.md",
+      "sha256": "f14b45571d6164f0bd5ca3268e83f0e02aa7f88d1820cd2cfc2bd46d02a1001c",
+      "bytes": 5673,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-12-imbalanced-classification-variasi-2.md"
+    },
+    {
+      "id": "12-026589a80e52",
+      "topics": [
+        "12"
+      ],
+      "kind": "practice-set",
+      "path": "sources/files/_output/soal-12-imbalanced-classification.md",
+      "original_path": "_output/soal-12-imbalanced-classification.md",
+      "sha256": "026589a80e5241708ed6a4ac20407ad45eebe5f2419cdb7066ee35e7381a2c31",
+      "bytes": 7056,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/soal-12-imbalanced-classification.md"
+    },
+    {
+      "id": "12-498c11f0d5a0",
+      "topics": [
+        "12"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[12] Imbalanced Classification_updated.pdf",
+      "original_path": "[12] Imbalanced Classification_updated.pdf",
+      "sha256": "498c11f0d5a06e5cc5020842df685c09027e95f1d54f73743cc3348131925979",
+      "bytes": 4083918,
+      "added_on": "2026-10-11",
+      "pages": 84,
+      "text_path": "sources/text/12-498c11f0d5a0.txt"
+    },
+    {
+      "id": "13-52fdfbb777dd",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/ws2/0.png",
+      "original_path": "ws2/0.png",
+      "sha256": "52fdfbb777dd9a3f7f03c546d77197323a4005c738fc8af3b162e20d2b816e1f",
+      "bytes": 921009,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "13-97a55f5052a6",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/ws2/1.png",
+      "original_path": "ws2/1.png",
+      "sha256": "97a55f5052a6df3f0091ea2d3752dbfeefcd9a565df58f0addd142b295702880",
+      "bytes": 1371178,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "13-5379fd3b2d5e",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/ws2/2.png",
+      "original_path": "ws2/2.png",
+      "sha256": "5379fd3b2d5e3f371ec521dc682fef76c95722ddfce9fd2b9412b207754bfe8d",
+      "bytes": 917662,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "13-a68223f7b675",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/ws2/3.png",
+      "original_path": "ws2/3.png",
+      "sha256": "a68223f7b675649b2d7764f8a3b675124ad9c7441289cb5a002e73b4a47b2885",
+      "bytes": 712819,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "13-0660f3fc36a4",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/ws2/4.png",
+      "original_path": "ws2/4.png",
+      "sha256": "0660f3fc36a47996689c6cc4fafd935c165a569fde8e1783ee44bd1e8e0da17f",
+      "bytes": 876882,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "13-7ed0ebf94189",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/ws2/5.png",
+      "original_path": "ws2/5.png",
+      "sha256": "7ed0ebf9418984a704ba66455efa65fb5172ee22769f4b89922f5f90495eb463",
+      "bytes": 1238898,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "13-5efed064fb70",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "exercise",
+      "path": "sources/files/ws2/6.png",
+      "original_path": "ws2/6.png",
+      "sha256": "5efed064fb70c7dfe8918e568a7833d225633779d4267344f7e7b6868bcf8405",
+      "bytes": 1538572,
+      "added_on": "2026-10-11",
+      "needs_vision": true
+    },
+    {
+      "id": "13-bef6b272316e",
+      "topics": [
+        "13"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[13] Review on Probability and Likelihood_updated.pdf",
+      "original_path": "[13] Review on Probability and Likelihood_updated.pdf",
+      "sha256": "bef6b272316efa2f33442fc0783f54e9c395932d8f16376b1b64ee9939ca7e77",
+      "bytes": 1627630,
+      "added_on": "2026-10-11",
+      "pages": 47,
+      "text_path": "sources/text/13-bef6b272316e.txt"
+    },
+    {
+      "id": "13-40f06c2134f5",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "worked-answer",
+      "path": "sources/files/_output/jawaban-ws2-likelihood-naive-bayes.html",
+      "original_path": "_output/jawaban-ws2-likelihood-naive-bayes.html",
+      "sha256": "40f06c2134f5371374184b0ae13eba35555b66fc0070bc5a2935062ff9603e44",
+      "bytes": 33549,
+      "added_on": "2026-10-11",
+      "text_path": "sources/text/13-40f06c2134f5.txt"
+    },
+    {
+      "id": "13-cc13944cbb4a",
+      "topics": [
+        "13",
+        "14"
+      ],
+      "kind": "worked-answer",
+      "path": "sources/files/_output/jawaban-ws2-likelihood-naive-bayes.md",
+      "original_path": "_output/jawaban-ws2-likelihood-naive-bayes.md",
+      "sha256": "cc13944cbb4ab2d2eab350471955aeb0193687a09a7b6d46a6a29e4127d345a2",
+      "bytes": 7133,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/_output/jawaban-ws2-likelihood-naive-bayes.md"
+    },
+    {
+      "id": "14-cde05134d5da",
+      "topics": [
+        "14"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - Naive Bayes Classification.md",
+      "original_path": "notes/[MIK] KASDAD - Naive Bayes Classification.md",
+      "sha256": "cde05134d5da9c2376c3f7972a0e4da4e00e8ed88eaafd3f999c182421d5f6d8",
+      "bytes": 10644,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Naive Bayes Classification.md"
+    },
+    {
+      "id": "14-b7e635dec700",
+      "topics": [
+        "14"
+      ],
+      "kind": "lecture-note",
+      "path": "sources/files/notes/[MIK] KASDAD - Naive Bayes.md",
+      "original_path": "notes/[MIK] KASDAD - Naive Bayes.md",
+      "sha256": "b7e635dec700af0fe7cf93b0d14554d0f40c92c8286ebb2aed8e57ff4fefe687",
+      "bytes": 6592,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Naive Bayes.md"
+    },
+    {
+      "id": "14-99129389d6ad",
+      "topics": [
+        "14"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - Naive Bayes - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - Naive Bayes - Komprehensif.md",
+      "sha256": "99129389d6adb90505837c2618b0bceddb570aece5f49eb9f482daebb6989316",
+      "bytes": 15312,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Naive Bayes - Komprehensif.md"
+    },
+    {
+      "id": "14-bd6693907877",
+      "topics": [
+        "14"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - Naive Bayes Classification - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - Naive Bayes Classification - Komprehensif.md",
+      "sha256": "bd66939078774cc05dfeddb946f8706beec6e86e7b68ae1a2dc7c3db0b178a28",
+      "bytes": 18808,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Naive Bayes Classification - Komprehensif.md"
+    },
+    {
+      "id": "14-9551aee93e35",
+      "topics": [
+        "14"
+      ],
+      "kind": "slide",
+      "path": "sources/files/[14] Probabilistic Model Naïve Bayes_updated.pdf",
+      "original_path": "[14] Probabilistic Model Naïve Bayes_updated.pdf",
+      "sha256": "9551aee93e3567dcfa765044eedaa9c4bb13a6bf46caf56b7942d221eda34673",
+      "bytes": 1118537,
+      "added_on": "2026-10-11",
+      "pages": 42,
+      "text_path": "sources/text/14-9551aee93e35.txt"
+    },
+    {
+      "id": "kuis-1f97ad0eae79",
+      "topics": [
+        "kuis"
+      ],
+      "kind": "lecture-note-comprehensive",
+      "path": "sources/files/notes/[MIK] KASDAD - Pembahasan Kuis - Komprehensif.md",
+      "original_path": "notes/[MIK] KASDAD - Pembahasan Kuis - Komprehensif.md",
+      "sha256": "1f97ad0eae794d392460c4e63a670b886a22150ddd7fef1cd7c76df00e65a5fc",
+      "bytes": 17746,
+      "added_on": "2026-10-11",
+      "text_path": "sources/files/notes/[MIK] KASDAD - Pembahasan Kuis - Komprehensif.md"
+    },
+    {
+      "id": "tugas-349860738eae",
+      "topics": [
+        "tugas"
+      ],
+      "kind": "assignment",
+      "path": "sources/files/labs/tugas kelompok programming/1. Cyber Vulnerability Lifecycle/TP 1 KASDAD Ganjil 2026_2027.pdf",
+      "original_path": "labs/tugas kelompok programming/1. Cyber Vulnerability Lifecycle/TP 1 KASDAD Ganjil 2026_2027.pdf",
+      "sha256": "349860738eae2dc5ca2e515da819f1583b28e6a2f3160bd70a21f729947f9da0",
+      "bytes": 677057,
+      "added_on": "2026-10-11",
+      "pages": 44,
+      "text_path": "sources/text/tugas-349860738eae.txt"
+    }
+  ]
+}

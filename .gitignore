@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+~$*
+
+# Materi pihak ketiga, tidak diterbitkan (lihat .publik-kecuali)
+sources/files
+sources/text
+mindmap/transkripsi.json

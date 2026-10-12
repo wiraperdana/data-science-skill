@@ -1,0 +1,1650 @@
+{
+ "sheets": [
+  {
+   "title": "a1. AI: paradigma dan agen cerdas",
+   "children": [
+    {
+     "title": "Paradigma humanly",
+     "children": [
+      {
+       "concept": "Thinking humanly",
+       "sumber": "[01] s12-13",
+       "definisi": "AI meniru cara manusia berpikir (cognitive modeling)",
+       "tujuan": "teori akal: model komputasi plus psikologi eksperimental",
+       "contoh": "introspeksi, eksperimen psikologi, brain imaging",
+       "plusminus": "kritik: model AI oke belum tentu teori akal"
+      },
+      {
+       "concept": "Acting humanly",
+       "sumber": "[01] s14",
+       "definisi": "mesin bertindak tak terbedakan dari manusia (Turing test)",
+       "langkah": "C menanyai A, B; A lolos bila dikira manusia",
+       "jenis": "NLP, representasi pengetahuan, penalaran, machine learning",
+       "plusminus": "kritik: pesawat terbang tidak meniru burung",
+       "catatan": "total Turing test menambah computer vision dan robotika"
+      }
+     ]
+    },
+    {
+     "title": "Paradigma rationally",
+     "children": [
+      {
+       "concept": "Thinking rationally",
+       "sumber": "[01] s15",
+       "definisi": "penalaran benar lewat hukum logika (laws of thought)",
+       "contoh": "logika proposisional, first-order, logika probabilistik",
+       "plusminus": "kritik: manusia tak selalu rasional, logika tak scalable"
+      },
+      {
+       "concept": "Acting rationally",
+       "sumber": "[01] s16",
+       "definisi": "agen bertindak demi hasil terbaik yang diharapkan",
+       "tujuan": "minimalkan biaya atau maksimalkan reward/utility",
+       "pembeda": "mencakup refleks tanpa penalaran, beda dari thinking rationally",
+       "plusminus": "paling bisa dimodelkan matematis; rasionalitas sempurna sering mustahil"
+      }
+     ]
+    },
+    {
+     "title": "Agen dan tugasnya",
+     "children": [
+      {
+       "concept": "Agent function",
+       "sumber": "[01] s18-20",
+       "definisi": "pemetaan percept sequence ke action",
+       "langkah": "f: P* → A; agent program mengimplementasikan f",
+       "interpretasi": "rasional = maksimalkan expected performance di lingkungan",
+       "pembeda": "agent function abstrak, agent program implementasi konkret"
+      },
+      {
+       "concept": "PEAS",
+       "sumber": "[01] s21",
+       "definisi": "deskripsi tugas agen: Performance, Environment, Actuators, Sensors",
+       "tujuan": "merinci tugas sebelum merancang agen",
+       "contoh": "taksi: aman cepat; jalan; kemudi rem; kamera GPS"
+      }
+     ]
+    },
+    {
+     "title": "Lingkungan dan tipe agen",
+     "children": [
+      {
+       "concept": "Sifat lingkungan",
+       "sumber": "[01] s22-23",
+       "definisi": "dimensi karakter lingkungan tempat agen bekerja",
+       "jenis": "observable, agent, deterministic, episodic, static, discrete, known",
+       "contoh": "taksi: partial, multi, nondeterministic, sequential, dynamic, continuous",
+       "jebakan": "catur dengan jam: semi-dynamic, bukan static"
+      },
+      {
+       "concept": "Tipe agen",
+       "sumber": "[01] s24-29",
+       "definisi": "rancangan agen menurut cara memilih aksi",
+       "jenis": [
+        "Simple reflex: aturan kondisi-aksi",
+        "Model-based: simpan state internal",
+        "Goal-based: search atau planning menuju goal",
+        "Utility-based: maksimalkan expected utility",
+        "Learning: performance element, learning element, critic"
+       ],
+       "pembeda": "learning agent: cara agen terwujud, bukan cara pilih aksi"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "a2. Machine learning dan data science",
+   "children": [
+    {
+     "title": "Jenis learning",
+     "children": [
+      {
+       "concept": "Supervised learning",
+       "sumber": "[01] s41; [07a] s16-17",
+       "definisi": "belajar dari pasangan input dan label yang benar",
+       "tujuan": "cari hipotesis h ≈ f sehingga h(x)=ŷ",
+       "kapan": "label tersedia",
+       "pembeda": "unsupervised tanpa label; reinforcement belajar dari reward"
+      },
+      {
+       "concept": "Unsupervised learning",
+       "sumber": "[01] s44-45; [07a] s13",
+       "definisi": "belajar dari data tanpa label",
+       "tujuan": "kelompokkan input yang mirip (clustering)",
+       "contoh": "deteksi fraud dengan clustering"
+      }
+     ]
+    },
+    {
+     "title": "Komponen ML",
+     "children": [
+      {
+       "concept": "Klasifikasi vs regresi",
+       "sumber": "[01] s42-43; [07a] s16",
+       "definisi": "klasifikasi memprediksi kelas, regresi memprediksi nilai kontinu",
+       "kapan": "ditentukan dari tipe target y",
+       "contoh": "beli komputer (kelas) vs harga mobil bekas (nilai)"
+      },
+      {
+       "concept": "Elemen machine learning",
+       "sumber": "[01] s46-47",
+       "definisi": "setiap algoritma ML = representation, evaluation, optimization",
+       "jenis": "representasi model, ukuran evaluasi, metode optimasi",
+       "contoh": "MLP beli komputer: neural network, accuracy, gradient descent"
+      }
+     ]
+    },
+    {
+     "title": "Sains data",
+     "children": [
+      {
+       "concept": "Sains data dan analytics",
+       "sumber": "[02] s11-12, s27",
+       "definisi": "ekstraksi insight dari data messy",
+       "jenis": [
+        "Descriptive: apa yang terjadi",
+        "Diagnostic: mengapa terjadi",
+        "Predictive: apa yang mungkin terjadi",
+        "Prescriptive: apa yang harus dilakukan"
+       ],
+       "contoh": "rekomendasi stok optimal = prescriptive"
+      },
+      {
+       "concept": "Big Data",
+       "sumber": "[02] s7",
+       "definisi": "data masif dengan ciri enam V",
+       "jenis": "volume, velocity, variety, veracity, value, variability"
+      }
+     ]
+    },
+    {
+     "title": "Metodologi",
+     "children": [
+      {
+       "concept": "KDD process",
+       "sumber": "[02] s20",
+       "definisi": "proses teknis dari data menjadi knowledge",
+       "langkah": "selection, preprocessing, transformation, data mining, interpretation/evaluation",
+       "pembeda": "KDD fokus teknis; CRISP-DM fokus bisnis dan teknis"
+      },
+      {
+       "concept": "CRISP-DM",
+       "sumber": "[02] s23; [03] s3; [04] s5",
+       "definisi": "proses standar lintas industri untuk data mining",
+       "langkah": "business, data understanding, preparation, modeling, evaluation, deployment",
+       "catatan": "data preparation dan modeling saling bolak-balik"
+      },
+      {
+       "concept": "Business understanding",
+       "sumber": "[02] s27-28",
+       "definisi": "tahap mendefinisikan masalah bisnis yang ingin diselesaikan",
+       "tujuan": "tujuan spesifik dan jenis analytics yang tepat",
+       "langkah": "tafsirkan pertanyaan, tetapkan tujuan, pilih jenis analytics"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "b1. Data collection dan EDA",
+   "children": [
+    {
+     "title": "Data collection",
+     "children": [
+      {
+       "concept": "Data primer dan sekunder",
+       "sumber": "[03] s7",
+       "definisi": "primer dikumpulkan sendiri, sekunder dari sumber yang ada",
+       "jenis": "primer: interview, observasi, survei; sekunder: internet, arsip",
+       "tujuan": "data untuk masalah hasil business understanding"
+      },
+      {
+       "concept": "Open data",
+       "sumber": "[03] s8-9, s15",
+       "definisi": "data publik yang bebas dipakai tanpa batasan",
+       "jenis": "public, accessible, reusable, complete, timely, managed post-release",
+       "contoh": "Kaggle, UCI, Data.gov, Satudata Jakarta",
+       "jebakan": "tantangan: kualitas, makna data, bias sampling, privasi"
+      }
+     ]
+    },
+    {
+     "title": "Pusat dan sebaran",
+     "children": [
+      {
+       "concept": "Central tendency",
+       "sumber": "[03] s22-26, s35",
+       "definisi": "mean, median, mode sebagai ukuran pusat data",
+       "langkah": "x̄=Σx/n; median posisi (n+1)/2; mode frekuensi terbanyak",
+       "contoh": "{3,6,12,18,19,21,23}: median 18",
+       "jebakan": "data skewed: mean tertarik ke ekor, median tetap"
+      },
+      {
+       "concept": "Variance dan standard deviation",
+       "sumber": "[03] s27-28, s34",
+       "definisi": "rata-rata kuadrat deviasi dari mean; s=√variance",
+       "tujuan": "mengukur sebaran data numerik",
+       "langkah": "hitung x̄, jumlahkan (x-x̄)², bagi jumlah data, akarkan",
+       "jebakan": "worksheet memakai pembagi n-1; cek instruksi soal"
+      }
+     ]
+    },
+    {
+     "title": "Bentuk distribusi",
+     "children": [
+      {
+       "concept": "IQR dan outlier",
+       "sumber": "[03] s29-33, s64",
+       "definisi": "outlier berada di luar batas RLB dan RUB",
+       "langkah": [
+        "Urutkan; Q1, Q3 median separuh bawah, atas",
+        "IQR=Q3-Q1",
+        "RLB=Q1-1,5·IQR; RUB=Q3+1,5·IQR"
+       ],
+       "contoh": "2,4,4,5,6,7,8: Q1=4, Q3=7, IQR=3",
+       "jebakan": "median data tidak ikut separuh bila n ganjil"
+      },
+      {
+       "concept": "Skewness dan kurtosis",
+       "sumber": "[03] s35-38",
+       "definisi": "kemiringan dan ketebalan ekor distribusi",
+       "langkah": "skew=Σ(x-x̄)³/(n·s³); kurtosis=Σ(x-x̄)⁴/(n·s⁴)",
+       "interpretasi": "skew>0 ekor kanan; kurtosis>3 lepto, menandakan outlier",
+       "catatan": "distribusi normal: skewness 0, kurtosis 3"
+      }
+     ]
+    },
+    {
+     "title": "Hubungan dan visualisasi",
+     "children": [
+      {
+       "concept": "Pearson correlation",
+       "sumber": "[03] s39-40; [04] s29",
+       "definisi": "kekuatan hubungan linear dua variabel",
+       "langkah": "r=Σ(x-x̄)(y-ȳ)/√(Σ(x-x̄)²·Σ(y-ȳ)²)",
+       "interpretasi": "-1 negatif terkuat, 0 tanpa korelasi linear, 1 positif",
+       "pembeda": "Pearson linear; Spearman berbasis peringkat"
+      },
+      {
+       "concept": "Visualisasi EDA",
+       "sumber": "[03] s44-45, s52, s57-58, s61, s71, s77",
+       "definisi": "representasi visual untuk menemukan pola dan anomali",
+       "jenis": [
+        "Basic: line, area, histogram, density, bar",
+        "Specialized: pie, box, scatter, heat map, tree map",
+        "Advanced: waffle, word cloud, bubble"
+       ],
+       "pembeda": "histogram rentang angka tanpa celah; bar kategori bercelah",
+       "jebakan": "pie sulit dibaca; histogram pakai baseline nol",
+       "catatan": "less is more: desain harus mendukung pesan"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "b2. Data preparation",
+   "children": [
+    {
+     "title": "Masalah data",
+     "children": [
+      {
+       "concept": "Dirty data dan GIGO",
+       "sumber": "[04] s5-10, s15",
+       "definisi": "data dunia nyata yang perlu dibersihkan sebelum dipakai",
+       "jenis": "incomplete/missing, noisy (error, outlier), inconsistent",
+       "tujuan": "menghindari garbage in, garbage out",
+       "contoh": "survei: ngebut, straight-line, jawaban kontradiktif"
+      },
+      {
+       "concept": "Missing value",
+       "sumber": "[04] s16-21, s48",
+       "definisi": "nilai tak tersimpan, tertulis ?, N/A, 0, atau kosong",
+       "langkah": [
+        "Konfirmasi dulu ke pengumpul data",
+        "Drop baris atau kolom bila missing banyak",
+        "Isi mean (numerik), mode (kategorikal), konstanta",
+        "Nearest neighbor atau fungsi domain"
+       ],
+       "contoh": "wine: heart disease Kanada diisi rata-rata 185",
+       "jebakan": "mean tidak terdefinisi untuk fitur kategorikal"
+      }
+     ]
+    },
+    {
+     "title": "Cleaning",
+     "children": [
+      {
+       "concept": "Smoothing noisy data",
+       "sumber": "[04] s22-23, s44",
+       "definisi": "menghilangkan noise atau outlier dari data",
+       "jenis": "binning, regresi, clustering, inspeksi manusia plus komputer",
+       "langkah": "binning: urutkan, bagi bin, ganti mean/median/batas bin"
+      },
+      {
+       "concept": "Data formatting",
+       "sumber": "[04] s24-25, s48, s53",
+       "definisi": "menyeragamkan ekspresi data dari berbagai sumber",
+       "kapan": "format, standar, atau praktik entri berbeda",
+       "contoh": "konsumsi -0,8 dikoreksi 0,8; digit berlebih Norwegia"
+      }
+     ]
+    },
+    {
+     "title": "Integrasi dan reduksi",
+     "children": [
+      {
+       "concept": "Data integration",
+       "sumber": "[04] s27-31, s51",
+       "definisi": "menggabungkan banyak sumber ke penyimpanan koheren",
+       "langkah": "samakan skema, cocokkan entitas, cek redundansi (r, χ²)",
+       "contoh": "data India: rata-rata semua state = 2,95",
+       "jebakan": "atribut sama bernama beda, atau atribut turunan"
+      },
+      {
+       "concept": "Data reduction dan selection",
+       "sumber": "[04] s37-41, s55",
+       "definisi": "representasi lebih kecil dengan hasil analisis serupa",
+       "jenis": "data cube, dimensionality reduction, numerosity reduction, kompresi",
+       "contoh": "seleksi baris Salary ≥ 10 juta; pembulatan dua desimal"
+      }
+     ]
+    },
+    {
+     "title": "Transformasi",
+     "children": [
+      {
+       "concept": "Normalisasi",
+       "sumber": "[04] s34-35; [05] s25-26; [11] s24-25",
+       "definisi": "menskalakan fitur ke rentang kecil yang sebanding",
+       "tujuan": "fitur berskala besar tidak mendominasi analisis",
+       "langkah": [
+        "Simple feature scaling: x/x_max",
+        "Min-max: (x-min)/(max-min)",
+        "Z-score: (x-μ)/σ"
+       ],
+       "contoh": "expenses 2 juta → min-max 0,33",
+       "catatan": "wajib untuk KNN dan PCA, tidak perlu untuk tree"
+      },
+      {
+       "concept": "Data discretization",
+       "sumber": "[04] s43-44, s57",
+       "definisi": "mengubah nilai kontinu menjadi interval atau kategori",
+       "kapan": "model butuh atribut kategorikal atau biner",
+       "contoh": "wine ≤1→0, ≤2→1, ≤5→2, >5→3"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "c1. Feature engineering dan encoding",
+   "children": [
+    {
+     "title": "Kreasi fitur",
+     "children": [
+      {
+       "concept": "Feature creation",
+       "sumber": "[05] s7-11",
+       "definisi": "membuat fitur baru dari domain atau pola data",
+       "jenis": "domain, data-driven, aggregation, ratio, age encoding, indicator",
+       "contoh": "rasio transaksi hari ini/median 30 hari: 16/2=8,00",
+       "tujuan": "menonjolkan pola yang tidak terlihat dari fitur mentah"
+      },
+      {
+       "concept": "Bag of Words",
+       "sumber": "[05] s27-29",
+       "definisi": "mengubah teks menjadi vektor hitungan kata",
+       "langkah": "tokenisasi, daftar kata unik, hitung frekuensi per kalimat",
+       "jebakan": "urutan kata diabaikan"
+      }
+     ]
+    },
+    {
+     "title": "Transformasi nilai",
+     "children": [
+      {
+       "concept": "Binning dan binarization",
+       "sumber": "[05] s22-24",
+       "definisi": "angka jadi interval, atau jadi 0/1 dengan ambang",
+       "tujuan": "model lebih sederhana dan mudah diinterpretasi",
+       "contoh": "umur 0-20, 21-40; suhu >38 jadi 1",
+       "catatan": "binning kategorikal: Engineer, Doctor jadi Professional"
+      }
+     ]
+    },
+    {
+     "title": "Encoding nominal",
+     "children": [
+      {
+       "concept": "One-hot encoding",
+       "sumber": "[05] s12; [11] s27-28",
+       "definisi": "satu kolom 0/1 untuk setiap kategori",
+       "kapan": "kategori nominal berjumlah sedikit",
+       "contoh": "apel, pisang, ceri: jarak Manhattan antarkategori 2",
+       "plusminus": "tanpa urutan palsu; kolom bertambah sebanyak kategori"
+      },
+      {
+       "concept": "Frequency encoding",
+       "sumber": "[05] s19-21",
+       "definisi": "mengganti kategori dengan frekuensi kemunculannya",
+       "kapan": "kelangkaan kategori berkaitan dengan target",
+       "contoh": "Jakarta 2, Surabaya 2, Bandung 1",
+       "jebakan": "dua kategori sama frekuensi menjadi tak terbedakan"
+      }
+     ]
+    },
+    {
+     "title": "Encoding urutan dan target",
+     "children": [
+      {
+       "concept": "Label / ordinal encoding",
+       "sumber": "[05] s18; [11] s26-29",
+       "definisi": "mengganti kategori dengan angka urut sesuai peringkat",
+       "kapan": "kategori ordinal, misal SD < SMP < SMA",
+       "jebakan": "pada nominal menyiratkan urutan dan jarak palsu"
+      },
+      {
+       "concept": "Target encoding",
+       "sumber": "[05] s13-17, s21",
+       "definisi": "mengganti kategori dengan nilai harapan target",
+       "langkah": "regresi: mean y; klasifikasi: P(y=1|kategori)",
+       "contoh": "merchant fraud Goldworks 2/2 = 1,00",
+       "jebakan": "label slide s16 tertukar; rawan leakage dan overfit",
+       "catatan": "versi berbobot: (n·mean_k + m·mean global)/(n+m)"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "c2. Feature selection",
+   "children": [
+    {
+     "title": "Filter sederhana",
+     "children": [
+      {
+       "concept": "Missing ratio dan variance threshold",
+       "sumber": "[05] s37-39",
+       "definisi": "buang fitur banyak kosong atau bervariansi rendah",
+       "langkah": "hitung rasio missing dan varians tiap fitur, bandingkan ambang",
+       "jebakan": "normalisasi dulu sebelum membandingkan varians"
+      },
+      {
+       "concept": "Filter korelasi",
+       "sumber": "[05] s40",
+       "definisi": "seleksi fitur memakai koefisien korelasi",
+       "langkah": "fitur-target r≈0 buang; antar fitur tinggi ambil satu",
+       "pembeda": "filter dilakukan sebelum model, cepat dan murah"
+      }
+     ]
+    },
+    {
+     "title": "Filter berbasis target",
+     "children": [
+      {
+       "concept": "Chi-square",
+       "sumber": "[05] s41-45",
+       "definisi": "uji hubungan fitur kategorikal dengan target kategorikal",
+       "langkah": [
+        "Tabel kontingensi observed",
+        "E = total baris × total kolom / N",
+        "χ² = Σ(O-E)²/E, urutkan antar fitur"
+       ],
+       "contoh": "Titanic Sex vs Survived: χ² = 327,7",
+       "interpretasi": "χ² besar: tolak H0, fitur berperan"
+      },
+      {
+       "concept": "Information gain",
+       "sumber": "[05] s46-53",
+       "definisi": "penurunan entropy target setelah data dibagi fitur",
+       "langkah": [
+        "H(S) = -Σp·log₂p",
+        "H(S|A) = Σ(|Sv|/|S|)·H(Sv)",
+        "Gain = H(S) - H(S|A)"
+       ],
+       "contoh": "buys computer: H=0,94; gain age 0,2465 tertinggi"
+      }
+     ]
+    },
+    {
+     "title": "Wrapper",
+     "children": [
+      {
+       "concept": "SFS dan SBS",
+       "sumber": "[05] s55-59",
+       "definisi": "seleksi sekuensial dengan melatih model berulang",
+       "langkah": "SFS tambah terbaik; SBS buang terburuk; ulangi sampai m",
+       "contoh": "4 fitur: uji tiap fitur tunggal, ambil f2, lanjut",
+       "jebakan": "sekuensial: fitur terpilih atau terbuang tak bisa dibatalkan"
+      },
+      {
+       "concept": "SFFS, exhaustive, RFE",
+       "sumber": "[05] s55, s60-61",
+       "definisi": "varian wrapper yang lebih menyeluruh",
+       "jenis": "SFFS tambah-buang bersyarat; exhaustive semua kombinasi; RFE rekursif",
+       "plusminus": "exhaustive terbaik tetapi mahal dan rawan overfit"
+      }
+     ]
+    },
+    {
+     "title": "Embedded",
+     "children": [
+      {
+       "concept": "Tree importance",
+       "sumber": "[05] s62-63; [07a] s64",
+       "definisi": "seleksi fitur terjadi saat tree dibangun",
+       "tujuan": "cepat seperti filter, akurat seperti wrapper",
+       "contoh": "Ice Age: hanya soda dan umur dipakai, popcorn terbuang"
+      },
+      {
+       "concept": "Lasso",
+       "sumber": "[05] s64",
+       "definisi": "regresi linear yang membolehkan bobot fitur bernilai 0",
+       "langkah": "y*=w1x1+...+wnxn+d; fitur dengan w=0 tereliminasi",
+       "contoh": "catatan sesi 5: Y=0,5X1+7X2+0·X4+5",
+       "jebakan": "rumus penalti L1 tidak ada di slide"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "c3. Dimensionality reduction dan PCA",
+   "children": [
+    {
+     "title": "Motivasi dan alternatif",
+     "children": [
+      {
+       "concept": "Curse of dimensionality",
+       "sumber": "[05] s31-32; [06] s2-4",
+       "definisi": "dimensi bertambah, akurasi naik lalu turun (Hughes)",
+       "kapan": "fitur sangat banyak",
+       "jenis": "solusi: feature selection atau dimensionality reduction"
+      },
+      {
+       "concept": "t-SNE",
+       "sumber": "[06] s51-52; [05] s7",
+       "definisi": "proyeksi nonlinear yang menjaga tetangga dekat tetap dekat",
+       "tujuan": "visualisasi struktur data berdimensi tinggi",
+       "catatan": "PCA dulu ke ±50 dimensi bila fitur sangat banyak",
+       "pembeda": "PCA linear dan memaksimalkan varians"
+      }
+     ]
+    },
+    {
+     "title": "Aljabar dasar",
+     "children": [
+      {
+       "concept": "Matriks kovarians",
+       "sumber": "[06] s7-9",
+       "definisi": "matriks kovarians semua pasangan variabel",
+       "langkah": "cov(A,B)=Σ(a-ā)(b-b̄)/N",
+       "interpretasi": "diagonal variansi; luar diagonal arah perubahan bersama",
+       "jebakan": "slide membagi N, worksheet membagi n-1"
+      },
+      {
+       "concept": "Eigenvalue dan eigenvector",
+       "sumber": "[06] s15-18, s41-45",
+       "definisi": "Av=λv: arah yang tidak berubah setelah transformasi",
+       "langkah": "det(S-λI)=0 untuk λ; selesaikan (S-λI)v=0, normalkan",
+       "catatan": "matriks simetris: eigenvector saling ortogonal",
+       "tujuan": "diagonalisasi kovarians: fitur baru tidak berkorelasi"
+      }
+     ]
+    },
+    {
+     "title": "Prosedur PCA",
+     "children": [
+      {
+       "concept": "PCA",
+       "sumber": "[06] s24-31",
+       "definisi": "transformasi data ke basis eigenvector matriks kovarians",
+       "tujuan": "reduksi dimensi dengan informasi tetap terjaga",
+       "langkah": [
+        "Standarisasi: DataAdjust = Data - mean",
+        "Kovarians, lalu eigen; urutkan λ menurun",
+        "Proyeksi z = T·x', buang λ terkecil"
+       ],
+       "contoh": "(0,69; 0,49) menjadi (-0,828; -0,175)",
+       "jebakan": "contoh slide hanya centering, bukan z-score penuh"
+      },
+      {
+       "concept": "Explained variance",
+       "sumber": "[06] s40, s50",
+       "definisi": "proporsi varians yang dijelaskan komponen ke-k",
+       "langkah": "EV_k = λk/Σλ; pilih k dengan kumulatif ≥ ambang",
+       "contoh": "eigenfaces: 150 dari 1850 komponen, EV 0,955"
+      }
+     ]
+    },
+    {
+     "title": "Hasil PCA",
+     "children": [
+      {
+       "concept": "Skor dan rekonstruksi",
+       "sumber": "[06] s30-38; soal-pca",
+       "definisi": "data dalam basis baru dan kembalinya ke ruang asal",
+       "langkah": "z = T·x'; x̂ = Tᵀz + mean",
+       "interpretasi": "error rekonstruksi berasal dari komponen yang dibuang",
+       "catatan": "SSE = (n-1)·Σλ dibuang bila kovarians berpembagi n-1"
+      },
+      {
+       "concept": "Eigenfaces",
+       "sumber": "[06] s46-50",
+       "definisi": "eigenvector citra wajah sebagai basis representasi wajah",
+       "contoh": "wajah 50×37 = 1850 piksel jadi 150 koefisien",
+       "catatan": "150 fitur PCA cukup untuk klasifikasi SVM"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "d1. CART",
+   "children": [
+    {
+     "title": "Ukuran impurity",
+     "children": [
+      {
+       "concept": "Gini index",
+       "sumber": "[07a] s24, s31-32",
+       "definisi": "ukuran impurity node pada classification tree",
+       "langkah": "G = 1 - Σp²",
+       "contoh": "node 1 ya, 3 tidak: 0,375; pure = 0",
+       "pembeda": "entropy alternatif dengan perilaku serupa"
+      },
+      {
+       "concept": "Entropy",
+       "sumber": "[07a] s24; [05] s47",
+       "definisi": "ukuran ketidakteraturan label di sebuah node",
+       "langkah": "H = -Σp·log p",
+       "contoh": "9 ya, 5 tidak: 0,94; node pure = 0"
+      }
+     ]
+    },
+    {
+     "title": "Kandidat split",
+     "children": [
+      {
+       "concept": "Split numerik",
+       "sumber": "[07a] s25, s33-38",
+       "definisi": "threshold kandidat untuk fitur kontinu",
+       "langkah": "urutkan nilai unik, ambil midpoint, uji ≤t vs >t",
+       "contoh": "umur 7, 12, 18…: kandidat 9,5; 15; 26,5…",
+       "catatan": "n nilai unik menghasilkan n-1 kandidat"
+      },
+      {
+       "concept": "Split kategorikal",
+       "sumber": "[07a] s23, s25",
+       "definisi": "partisi biner satu kategori melawan sisanya",
+       "langkah": "untuk tiap kategori t: x=t vs x≠t",
+       "contoh": "Kanal Mobile, Cabang, RM: tiga partisi biner",
+       "pembeda": "multi-way split membagi k cabang sekaligus"
+      }
+     ]
+    },
+    {
+     "title": "Membangun tree",
+     "children": [
+      {
+       "concept": "CART classification",
+       "sumber": "[07a] s19-45",
+       "definisi": "tree biner yang memilih split dengan impurity terkecil",
+       "langkah": [
+        "Tiap fitur dan threshold: bagi D jadi D1, D2",
+        "cost = (|D1|/|D|)G1 + (|D2|/|D|)G2",
+        "Pilih cost terkecil, ulangi rekursif"
+       ],
+       "contoh": "root soda 0,214; umur 0,343; popcorn 0,405",
+       "plusminus": "mudah dibaca, tanpa standardisasi; tidak stabil, high variance"
+      },
+      {
+       "concept": "Regression tree",
+       "sumber": "[07a] s24, s48-53",
+       "definisi": "CART untuk target kontinu dengan cost MSE",
+       "langkah": "cost = (1/|D|)Σ(y-ȳ)² dibobot; leaf = rata-rata y",
+       "contoh": "Lab Lengkap 90,97 < Nonton Video 174,636 → root"
+      },
+      {
+       "concept": "Greedy dan kondisi berhenti",
+       "sumber": "[07a] s27, s46",
+       "definisi": "split terbaik lokal dipilih dan tidak direvisi",
+       "langkah": "berhenti saat node pure atau tak ada fitur tersisa",
+       "jebakan": "leaf impure diberi label mayoritas; greedy belum tentu optimal"
+      }
+     ]
+    },
+    {
+     "title": "Mengendalikan tree",
+     "children": [
+      {
+       "concept": "Hyperparameter tree",
+       "sumber": "[07a] s55-59",
+       "definisi": "pengatur proses learning yang ditetapkan sebelum training",
+       "jenis": "max_depth, min_samples_split, min_samples_leaf, max_features, max_leaf_nodes",
+       "pembeda": "parameter = hasil training, misal struktur dan split",
+       "catatan": "dipilih lewat testing, idealnya cross-validation"
+      },
+      {
+       "concept": "Surrogate split",
+       "sumber": "[07a] s61",
+       "definisi": "split cadangan yang hampir sebaik split terbaik",
+       "kapan": "data uji punya missing value di fitur split",
+       "catatan": "alternatif lain: imputasi saat preprocessing"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "d2. Ensemble dan Random Forest",
+   "children": [
+    {
+     "title": "Ensemble dasar",
+     "children": [
+      {
+       "concept": "Ensemble learning",
+       "sumber": "[08] s14-16",
+       "definisi": "gabungan beberapa base model",
+       "tujuan": "variance turun dengan bias setara base model",
+       "jenis": "regresi rata-rata, klasifikasi majority vote, stacking"
+      },
+      {
+       "concept": "Majority vote",
+       "sumber": "[08] s16, s25-26",
+       "definisi": "kelas akhir dari suara terbanyak base model",
+       "contoh": "6 tree: 5 Yes, 1 No → Yes",
+       "pembeda": "regresi memakai rata-rata prediksi"
+      }
+     ]
+    },
+    {
+     "title": "Bagging",
+     "children": [
+      {
+       "concept": "Bootstrap dan bagging",
+       "sumber": "[08] s17-18; [10] s30-31",
+       "definisi": "M model dari sampel bootstrap, lalu digabung",
+       "langkah": "ambil N sampel dengan pengembalian per model, latih paralel",
+       "tujuan": "ensemble tidak bergantung pada satu training set",
+       "jebakan": "bagging tidak selalu meningkatkan kinerja"
+      },
+      {
+       "concept": "Out-of-bag",
+       "sumber": "[08] s18",
+       "definisi": "±37% data yang tidak terambil bootstrap",
+       "tujuan": "data uji untuk estimasi kinerja tanpa memisahkan data",
+       "catatan": "tiap base model rata-rata melihat ±63% data"
+      }
+     ]
+    },
+    {
+     "title": "Random Forest",
+     "children": [
+      {
+       "concept": "Random Forest",
+       "sumber": "[08] s20-26",
+       "definisi": "banyak tree dari bootstrap dan subset fitur acak",
+       "langkah": [
+        "Bootstrap N baris untuk tiap tree",
+        "Tiap node pilih d ≪ D fitur acak",
+        "Gabung: vote mayoritas atau rata-rata"
+       ],
+       "tujuan": "memperbaiki kecenderungan overfitting decision tree",
+       "pembeda": "bagging biasa memakai semua fitur di setiap split"
+      },
+      {
+       "concept": "Hyperparameter Random Forest",
+       "sumber": "[08] s27",
+       "definisi": "pengatur jumlah tree dan ukuran sampelnya",
+       "jenis": "n_estimators, max_samples, plus hyperparameter tree"
+      }
+     ]
+    },
+    {
+     "title": "Kinerja",
+     "children": [
+      {
+       "concept": "Random Forest vs single tree",
+       "sumber": "[08] s28-33",
+       "definisi": "perbandingan kinerja dan karakter kedua model",
+       "contoh": "test accuracy tree 0,86; bag/RF sekitar 0,90-0,91",
+       "interpretasi": "tree acak kurang berkorelasi, error tidak di tempat sama",
+       "plusminus": "tak overfit dengan tree cukup; lebih lambat, sulit dijelaskan",
+       "catatan": "test error RF dan boosting turun seiring jumlah tree"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "e1. Metodologi evaluasi dan metrik regresi",
+   "children": [
+    {
+     "title": "Pembagian data",
+     "children": [
+      {
+       "concept": "Train, validation, test",
+       "sumber": "[09] s6-9",
+       "definisi": "data latih, data tuning, dan data uji akhir",
+       "tujuan": "estimasi kinerja yang tidak bias",
+       "jebakan": "jangan uji di data latih, jangan tuning pakai test"
+      },
+      {
+       "concept": "Holdout",
+       "sumber": "[09] s10",
+       "definisi": "data dibagi sekali menjadi training dan testing",
+       "kapan": "data besar dan seimbang",
+       "jebakan": "kelas bisa tidak proporsional; estimasi error pesimistis"
+      }
+     ]
+    },
+    {
+     "title": "Cross-validation",
+     "children": [
+      {
+       "concept": "K-fold cross-validation",
+       "sumber": "[09] s11-15",
+       "definisi": "data dibagi K fold, tiap fold bergiliran jadi validasi",
+       "langkah": "latih K-1 fold, uji 1 fold, rata-ratakan K error",
+       "contoh": "10.000 data, 5-fold: latih 8.000, uji 2.000",
+       "interpretasi": "K besar: bias kecil, variance dan komputasi besar"
+      },
+      {
+       "concept": "LOOCV dan random subsampling",
+       "sumber": "[09] s12, s14-15",
+       "definisi": "variasi CV: K = N, atau validasi acak berulang",
+       "kapan": "LOOCV untuk data kecil atau sparse",
+       "catatan": "umumnya ambil K = 10"
+      }
+     ]
+    },
+    {
+     "title": "Metrik regresi",
+     "children": [
+      {
+       "concept": "MAE, MSE, RMSE",
+       "sumber": "[09] s18-19",
+       "definisi": "rata-rata error absolut, kuadrat, dan akarnya",
+       "langkah": "(1/n)Σ|y-y*|; (1/n)Σ(y-y*)²; √MSE",
+       "contoh": "4 titik: 1,625; 2,9375; 1,7139",
+       "pembeda": "MSE menghukum error besar; RMSE satuan sama dengan target"
+      },
+      {
+       "concept": "R-squared",
+       "sumber": "[09] s20-21; catatan sesi 8",
+       "definisi": "proporsi variasi y yang dijelaskan model",
+       "langkah": "R² = 1 - SS_regression/SS_total",
+       "contoh": "1 - 11,75/26 = 0,55",
+       "interpretasi": "0,55: 55% variasi y dijelaskan oleh x",
+       "jebakan": "R² dekat 1 belum tentu baik; cek residual acak"
+      }
+     ]
+    },
+    {
+     "title": "Perbandingan model",
+     "children": [
+      {
+       "concept": "Uji t (t-test)",
+       "sumber": "[09] s55-60",
+       "definisi": "uji signifikansi selisih rata-rata kinerja dua model",
+       "langkah": [
+        "H0, H1, α; df = n+m-2",
+        "Sp² = ((n-1)S1²+(m-1)S2²)/(n+m-2)",
+        "TS = (X̄1-X̄2)/√(Sp²(1/n+1/m))"
+       ],
+       "contoh": "Badu: TS = -0,0471 > -1,356, terima H0",
+       "asumsi": "variansi populasi kedua kelompok dianggap sama"
+      },
+      {
+       "concept": "Benchmark dan ablation",
+       "sumber": "[09] s51-54",
+       "definisi": "benchmark: data uji standar; ablation: kontribusi tiap modul",
+       "pembeda": "feature selection memilih fitur; ablation menguji komponen sistem",
+       "catatan": "tanpa benchmark: pakai data dan k-fold yang sama"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "e2. Metrik klasifikasi",
+   "children": [
+    {
+     "title": "Dasar",
+     "children": [
+      {
+       "concept": "Confusion matrix",
+       "sumber": "[09] s23-24, s38-39, s45-49",
+       "definisi": "tabel TP, FN, FP, TN: aktual vs prediksi",
+       "langkah": "tentukan kelas positif, lalu isi keempat sel",
+       "contoh": "ilegal: TP=50, FN=75, FP=25, TN=1350",
+       "jebakan": "kelas positif adalah kelas yang penting, bukan mayoritas"
+      },
+      {
+       "concept": "Accuracy",
+       "sumber": "[09] s25, s31",
+       "definisi": "proporsi prediksi benar dari seluruh data",
+       "langkah": "(TP+TN)/total",
+       "kapan": "kelas seimbang",
+       "jebakan": "data imbalanced: accuracy tinggi bisa menyesatkan"
+      }
+     ]
+    },
+    {
+     "title": "Per kelas",
+     "children": [
+      {
+       "concept": "Precision",
+       "sumber": "[09] s26, s48",
+       "definisi": "dari yang diprediksi positif, berapa yang benar",
+       "langkah": "TP/(TP+FP)",
+       "kapan": "false positive mahal",
+       "contoh": "50/(50+25) = 0,667"
+      },
+      {
+       "concept": "Recall dan specificity",
+       "sumber": "[09] s26, s34, s48",
+       "definisi": "recall: TPR kelas positif; specificity: TNR kelas negatif",
+       "langkah": "TP/(TP+FN); TN/(TN+FP); FPR = 1 - spec",
+       "kapan": "false negative berbahaya, misal orang sakit",
+       "jebakan": "menebak semua positif memberi recall 1"
+      }
+     ]
+    },
+    {
+     "title": "Gabungan",
+     "children": [
+      {
+       "concept": "F1 dan F-beta",
+       "sumber": "[09] s28-31",
+       "definisi": "harmonic mean precision dan recall; β mengatur bobot",
+       "langkah": "F_β = (1+β²)PR/(β²P+R); β=1 menjadi F1",
+       "contoh": "P 0,048, R 0,833: simple mean 0,44, F1 0,09",
+       "interpretasi": "β>1 utamakan recall, β<1 utamakan precision"
+      },
+      {
+       "concept": "G-mean",
+       "sumber": "[09] s27",
+       "definisi": "rata-rata geometrik sensitivity dan specificity",
+       "langkah": "√(sensitivity × specificity)",
+       "tujuan": "kinerja seimbang di kelas positif dan negatif"
+      }
+     ]
+    },
+    {
+     "title": "Lintas threshold",
+     "children": [
+      {
+       "concept": "ROC dan AUC",
+       "sumber": "[09] s33-36",
+       "definisi": "kurva TPR terhadap FPR pada berbagai threshold",
+       "interpretasi": "AUC mendekati 1 baik; tidak bergantung satu threshold",
+       "contoh": "threshold 0,8: FP rendah, FN tinggi; 0,4 sebaliknya",
+       "pembeda": "PR-AUC dipakai bila kelas positif lebih penting"
+      },
+      {
+       "concept": "Brier score",
+       "sumber": "[09] s32",
+       "definisi": "rata-rata kuadrat selisih probabilitas dan label",
+       "langkah": "(1/N)Σ(f_t - o_t)², o_t bernilai 0 atau 1",
+       "kapan": "classifier mengeluarkan probabilitas, bukan kelas"
+      }
+     ]
+    },
+    {
+     "title": "Multikelas",
+     "children": [
+      {
+       "concept": "Macro dan micro averaging",
+       "sumber": "[09] s37-42",
+       "definisi": "rata-rata per kelas, atau hitungan global",
+       "langkah": "One-vs-Rest; macro rata-rata F1; micro dari total TP, FP",
+       "contoh": "macro-F1 46,5%; micro P=R=F1=48%",
+       "pembeda": "macro tidak memperhitungkan imbalance label"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "f1. Bias-variance tradeoff",
+   "children": [
+    {
+     "title": "Konsep error",
+     "children": [
+      {
+       "concept": "Training vs generalization error",
+       "sumber": "[10] s9-12",
+       "definisi": "error di data latih vs ekspektasi error data baru",
+       "contoh": "squiggly line: MSE training 0, testing buruk",
+       "interpretasi": "model baik: error generalisasi rendah, bukan training"
+      },
+      {
+       "concept": "Dekomposisi MSE",
+       "sumber": "[10] s20-24",
+       "definisi": "error ekspektasi = bias² + variance + noise",
+       "langkah": [
+        "y = f(x) + ε, ε mean 0, variance σ²",
+        "MSE = Bias(g(x̂))² + Var(g(x̂)) + σ²"
+       ],
+       "interpretasi": "σ² irreducible, batas bawah; bias dan variance reducible"
+      }
+     ]
+    },
+    {
+     "title": "Komponen error",
+     "children": [
+      {
+       "concept": "Bias",
+       "sumber": "[10] s13",
+       "definisi": "ketidakmampuan model menangkap hubungan dalam data",
+       "langkah": "kuadrat selisih rata-rata prediksi dengan nilai sebenarnya",
+       "contoh": "regresi linear pada data melengkung",
+       "interpretasi": "bias tinggi: error training dan testing tinggi"
+      },
+      {
+       "concept": "Variance",
+       "sumber": "[10] s14",
+       "definisi": "besar perubahan model saat data latih berganti",
+       "interpretasi": "variance tinggi: error training rendah, testing tinggi",
+       "contoh": "model kompleks yang training-nya tak dibatasi"
+      }
+     ]
+    },
+    {
+     "title": "Diagnosis",
+     "children": [
+      {
+       "concept": "Underfitting",
+       "sumber": "[10] s11, s15, s19",
+       "definisi": "model gagal menangkap pola dasar data",
+       "interpretasi": "error training tinggi dan dekat error test",
+       "langkah": "naikkan kompleksitas, misal linear ke polinomial sedang"
+      },
+      {
+       "concept": "Overfitting",
+       "sumber": "[10] s10, s15, s19, s25",
+       "definisi": "model mempelajari pola sekaligus noise",
+       "interpretasi": "error training jauh lebih rendah dari error test",
+       "langkah": "regularisasi, pruning, ensemble, atau tambah data"
+      },
+      {
+       "concept": "Model ideal",
+       "sumber": "[10] s5, s16-18, s24",
+       "definisi": "low bias dan low variance",
+       "langkah": "cari sweet spot dengan MSE testing terendah",
+       "catatan": "Occam's razor: hindari hipotesis terlalu kompleks"
+      }
+     ]
+    },
+    {
+     "title": "Data dan pilihan model",
+     "children": [
+      {
+       "concept": "Learning curve",
+       "sumber": "[10] s35-36",
+       "definisi": "kinerja model terhadap jumlah data training",
+       "tujuan": "menilai manfaat menambah data untuk menurunkan variance",
+       "jenis": "realizable, non-realizable, redundant"
+      },
+      {
+       "concept": "Dampak teknik",
+       "sumber": "[10] s37",
+       "definisi": "pengaruh pilihan model terhadap bias dan variance",
+       "contoh": "k-NN: k naik, bias naik, variance turun",
+       "catatan": "regularisasi menaikkan bias, menurunkan variance"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "f2. Regularisasi dan boosting",
+   "children": [
+    {
+     "title": "Regularisasi tree",
+     "children": [
+      {
+       "concept": "Pre-pruning",
+       "sumber": "[10] s27-28",
+       "definisi": "menghentikan pertumbuhan tree dengan kriteria heuristik",
+       "jenis": "minimum data per node, maksimum leaf, kedalaman maksimum",
+       "pembeda": "lebih cepat daripada post-pruning"
+      },
+      {
+       "concept": "Post-pruning",
+       "sumber": "[10] s27",
+       "definisi": "tumbuhkan tree penuh, lalu gabungkan subtree ke parent",
+       "kapan": "tree terlalu dalam dan overfit",
+       "catatan": "parameter ccp_alpha tidak ada di slide"
+      }
+     ]
+    },
+    {
+     "title": "Turunkan variance",
+     "children": [
+      {
+       "concept": "Bagging untuk variance",
+       "sumber": "[10] s29-31",
+       "definisi": "M model independen paralel pada bootstrap sample",
+       "langkah": "variance rata-rata k prediksi i.i.d. = σ²/k",
+       "asumsi": "prediksi base model independen dan berdistribusi sama"
+      }
+     ]
+    },
+    {
+     "title": "Konsep boosting",
+     "children": [
+      {
+       "concept": "Boosting",
+       "sumber": "[10] s32",
+       "definisi": "model serial, tiap model memperbaiki kesalahan sebelumnya",
+       "tujuan": "menurunkan bias",
+       "pembeda": "bagging paralel untuk variance, boosting serial untuk bias",
+       "jenis": "AdaBoost, Gradient Boosting, XGBoost"
+      },
+      {
+       "concept": "XGBoost",
+       "sumber": "[10] s32; catatan sesi 8",
+       "definisi": "Extreme Gradient Boosting, varian gradient boosting",
+       "catatan": "slide hanya menyebut nama; dosen menyarankan latihan mandiri"
+      }
+     ]
+    },
+    {
+     "title": "Algoritma boosting",
+     "children": [
+      {
+       "concept": "AdaBoost",
+       "sumber": "[10] s33",
+       "definisi": "boosting yang menaikkan bobot sampel salah prediksi",
+       "langkah": [
+        "Inisialisasi vektor bobot sampel",
+        "Salah prediksi: bobot naik; resample",
+        "Bobot learner dari kinerja; weighted vote"
+       ],
+       "catatan": "regresi memakai weighted average"
+      },
+      {
+       "concept": "Gradient Boosting",
+       "sumber": "[10] s34",
+       "definisi": "tiap model baru belajar dari residual model sebelumnya",
+       "langkah": "awal rata-rata target; latih pada residual; jumlahkan output×alpha",
+       "pembeda": "AdaBoost mengubah bobot sampel; GB memodelkan residual"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "g. Nearest neighbor classification dan regression",
+   "children": [
+    {
+     "title": "Algoritma",
+     "children": [
+      {
+       "concept": "KNN classifier",
+       "sumber": "[11] s15, s19-23, s42",
+       "definisi": "kelas dari vote mayoritas K tetangga terdekat",
+       "langkah": [
+        "Pilih K",
+        "Hitung jarak ke semua data latih",
+        "Ambil K terdekat, vote kelas terbanyak"
+       ],
+       "contoh": "pelanggan 13, K=3: ID 1, 2, 5, kelas A",
+       "plusminus": "intuitif, batas nonlinear; testing mahal, butuh banyak sampel"
+      },
+      {
+       "concept": "KNN regression",
+       "sumber": "[11] s32-37",
+       "definisi": "prediksi rata-rata target K tetangga terdekat",
+       "langkah": "ŷ = (1/K)Σy tetangga",
+       "contoh": "(1.500 + 1.700 + 1.800)/3 = 1.670"
+      },
+      {
+       "concept": "Memilih K",
+       "sumber": "[11] s16-17",
+       "definisi": "jumlah tetangga yang ikut voting",
+       "langkah": "coba beberapa K dengan cross validation",
+       "jebakan": "K=1 rentan noise; K terlalu besar hilang lokalitas"
+      },
+      {
+       "concept": "Kompleksitas",
+       "sumber": "[11] s41-42",
+       "definisi": "biaya komputasi prediksi KNN",
+       "langkah": "O(d) per jarak, O(nd) satu tetangga, O(knd) total",
+       "catatan": "tanpa tahap training; semua hitungan saat testing"
+      }
+     ]
+    },
+    {
+     "title": "Ukuran jarak",
+     "children": [
+      {
+       "concept": "Manhattan distance",
+       "sumber": "[11] s9, s21-22",
+       "definisi": "jumlah selisih absolut tiap fitur",
+       "langkah": "Σ|p-q|",
+       "contoh": "(1,2,3) dan (4,5,6): 9"
+      },
+      {
+       "concept": "Euclidean distance",
+       "sumber": "[11] s9",
+       "definisi": "jarak garis lurus antar dua titik",
+       "langkah": "√Σ(p-q)²",
+       "contoh": "(1,2,3) dan (4,5,6): √27 = 5,196"
+      }
+     ]
+    },
+    {
+     "title": "Ukuran similarity",
+     "children": [
+      {
+       "concept": "Cosine similarity",
+       "sumber": "[11] s10; catatan KNN",
+       "definisi": "kemiripan dari sudut antar dua vektor",
+       "langkah": "p·q/(‖p‖·‖q‖)",
+       "jebakan": "similarity besar berarti dekat, kebalikan jarak"
+      },
+      {
+       "concept": "Jaccard similarity",
+       "sumber": "[11] s10-11; catatan KNN",
+       "definisi": "persentase kecocokan persis antar sampel",
+       "langkah": "|p∩q|/|p∪q|",
+       "kapan": "data biner atau kategorikal"
+      }
+     ]
+    },
+    {
+     "title": "Preprocessing",
+     "children": [
+      {
+       "concept": "Normalisasi fitur",
+       "sumber": "[11] s24-25, s40",
+       "definisi": "menyamakan skala fitur sebelum menghitung jarak",
+       "contoh": "tanpa normalisasi (1,100) salah ke B; setelahnya A",
+       "jebakan": "fitur berskala besar mendominasi jarak"
+      },
+      {
+       "concept": "Encoding fitur non-numerik",
+       "sumber": "[11] s26-30",
+       "definisi": "mengubah boolean dan kategori menjadi angka",
+       "jenis": "boolean 0/1; ordinal berurutan; nominal one-hot",
+       "contoh": "one-hot apel-ceri jarak 2; label 1-3 jarak 2"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "h1. Imbalanced: masalah, evaluasi, cost-sensitive",
+   "children": [
+    {
+     "title": "Masalah",
+     "children": [
+      {
+       "concept": "Imbalanced classification",
+       "sumber": "[12] s8-15",
+       "definisi": "distribusi kelas di data training tidak seimbang",
+       "jenis": "slight (4:6) dan severe (1:100 atau lebih)",
+       "contoh": "fraud, spam, churn; 20 dari 10.000 orang sakit",
+       "interpretasi": "model standar bias ke kelas mayoritas"
+      },
+      {
+       "concept": "Penyebab dan tantangan",
+       "sumber": "[12] s11-15",
+       "definisi": "sumber ketimpangan dan faktor yang memperburuknya",
+       "jenis": "biased sampling, measurement error, preprocessing bias, sifat domain",
+       "catatan": "diperparah ukuran data kecil, label noise, overlap kelas"
+      }
+     ]
+    },
+    {
+     "title": "Evaluasi",
+     "children": [
+      {
+       "concept": "Metrik untuk imbalanced",
+       "sumber": "[12] s16; [09] s22-36; catatan Imbalance 3",
+       "definisi": "metrik yang peka terhadap kelas minoritas",
+       "jenis": "recall, precision, F1/F-beta, G-mean, ROC/PR-AUC",
+       "jebakan": "accuracy dilarang: menebak semua mayoritas sudah tinggi"
+      },
+      {
+       "concept": "Stratified k-fold",
+       "sumber": "[12] s18-22, s81",
+       "definisi": "k-fold yang menjaga proporsi kelas di setiap fold",
+       "kapan": "data imbalanced; dosen menyebutnya wajib",
+       "contoh": "10.000 data 90:10, 5-fold: fold uji 1.800 + 200",
+       "catatan": "train_test_split(stratify=y) untuk split sekali"
+      }
+     ]
+    },
+    {
+     "title": "Cost-sensitive",
+     "children": [
+      {
+       "concept": "Cost matrix",
+       "sumber": "[12] s24-27",
+       "definisi": "biaya untuk tiap jenis kesalahan prediksi",
+       "tujuan": "meminimalkan total biaya, bukan jumlah error",
+       "contoh": "awal kebalikan rasio 1:100: FN 100, FP 1",
+       "jebakan": "menentukan biaya sering sulit, misal diagnosis kanker"
+      },
+      {
+       "concept": "Class weight",
+       "sumber": "[12] s28-29, s83",
+       "definisi": "bobot kelas berbanding terbalik dengan frekuensinya",
+       "langkah": "w = n_samples/(n_classes × n_samples_with_class)",
+       "contoh": "9.900 vs 100: bobot 0,505 dan 50"
+      },
+      {
+       "concept": "Cost-sensitive LR dan DT",
+       "sumber": "[12] s30-35",
+       "definisi": "loss model diberi bobot per kelas",
+       "langkah": "class_weight={0:0,01, 1:1,0}",
+       "contoh": "ROC AUC 0,985 naik menjadi 0,989",
+       "jenis": "resampling, algoritma, ensemble cost-sensitive"
+      }
+     ]
+    },
+    {
+     "title": "Prosedur",
+     "children": [
+      {
+       "concept": "Resampling hanya di training",
+       "sumber": "[12] s37, s44, s76-77",
+       "definisi": "sampling dilakukan pada fold training saja",
+       "langkah": "imblearn Pipeline: resampler lalu model, cross_val_score",
+       "tujuan": "evaluasi tetap pada data asli dan representatif",
+       "jebakan": "SMOTE sebelum split membocorkan data uji"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "h2. Resampling",
+   "children": [
+    {
+     "title": "Sampling acak",
+     "children": [
+      {
+       "concept": "Random over/undersampling",
+       "sumber": "[12] s39-47",
+       "definisi": "duplikasi minoritas atau hapus mayoritas secara acak",
+       "contoh": "over: 9.900:100 → 9.900:9.900; under → 100:100",
+       "plusminus": "cepat, tanpa heuristik; over rawan overfit, under buang informasi"
+      }
+     ]
+    },
+    {
+     "title": "Oversampling sintetis",
+     "children": [
+      {
+       "concept": "SMOTE",
+       "sumber": "[12] s49-55, s82",
+       "definisi": "sampel sintetis minoritas lewat convex combination",
+       "langkah": [
+        "Pilih minoritas a, cari k tetangga minoritas",
+        "Pilih tetangga b secara acak",
+        "s = λa + (1-λ)b, 0 ≤ λ ≤ 1"
+       ],
+       "contoh": "a(2,4), b(4,2): titik sah di segmen a-b",
+       "jebakan": "mengabaikan mayoritas; sintetis bisa jatuh di area overlap",
+       "catatan": "decision tree: ROC AUC 0,769 menjadi 0,826 dengan SMOTE"
+      },
+      {
+       "concept": "Borderline-SMOTE",
+       "sumber": "[12] s56-59",
+       "definisi": "SMOTE hanya pada minoritas di batas kelas",
+       "langkah": "k/2≤#mayoritas<k dari k tetangga: borderline, di-SMOTE",
+       "jenis": "#mayoritas = k noise; < k/2 safe",
+       "pembeda": "varian SVM menentukan batas dengan support vector"
+      },
+      {
+       "concept": "ADASYN",
+       "sumber": "[12] s60-62",
+       "definisi": "sintetis lebih banyak untuk minoritas yang sulit",
+       "langkah": "bobot w ∝ #mayoritas/#minoritas tetangga; sintetis sebanding w",
+       "jebakan": "outlier berdensitas rendah ikut diperhatikan; buang outlier dulu"
+      }
+     ]
+    },
+    {
+     "title": "Undersampling simpan",
+     "children": [
+      {
+       "concept": "NearMiss",
+       "sumber": "[12] s65, s67-68",
+       "definisi": "simpan mayoritas berdasarkan jarak ke minoritas",
+       "jenis": [
+        "NM-1: rata-rata ke 3 minoritas terdekat terkecil",
+        "NM-2: rata-rata ke 3 minoritas terjauh terkecil",
+        "NM-3: mayoritas terdekat untuk tiap minoritas"
+       ]
+      },
+      {
+       "concept": "Condensed Nearest Neighbor",
+       "sumber": "[12] s65-66",
+       "definisi": "subset minimal yang klasifikasinya sama dengan data lengkap",
+       "langkah": "uji mayoritas dengan 1-NN; yang salah masuk subset",
+       "jebakan": "awalnya acak sehingga sampel redundan bisa masuk"
+      }
+     ]
+    },
+    {
+     "title": "Undersampling hapus",
+     "children": [
+      {
+       "concept": "Tomek Links",
+       "sumber": "[12] s69-70",
+       "definisi": "pasangan beda kelas yang saling tetangga terdekat",
+       "langkah": "NN(a)=b dan NN(b)=a, kelas beda; hapus mayoritas",
+       "tujuan": "membersihkan sampel borderline atau noisy"
+      },
+      {
+       "concept": "Edited Nearest Neighbors",
+       "sumber": "[12] s71-72",
+       "definisi": "hapus sampel yang salah diklasifikasi tetangganya",
+       "langkah": "cek 3-NN; mayoritas salah dihapus",
+       "catatan": "minoritas salah: tetangga mayoritasnya yang dihapus"
+      }
+     ]
+    },
+    {
+     "title": "Kombinasi",
+     "children": [
+      {
+       "concept": "OSS dan NCR",
+       "sumber": "[12] s73-74",
+       "definisi": "gabungan metode simpan dan hapus",
+       "jenis": "OSS=Tomek+CNN; NCR=CNN+ENN"
+      },
+      {
+       "concept": "SMOTE + Tomek atau ENN",
+       "sumber": "[12] s76-79",
+       "definisi": "oversampling SMOTE lalu cleaning Tomek atau ENN",
+       "tujuan": "membersihkan sintetis di area overlap atau noise"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "i1. Probabilitas dan Bayes theorem",
+   "children": [
+    {
+     "title": "Dasar",
+     "children": [
+      {
+       "concept": "Aksioma dan aturan dasar",
+       "sumber": "[13] s5-8",
+       "definisi": "P(A)≥0, P(Ω)=1, aditif untuk event saling lepas",
+       "langkah": "P(A∪B)=P(A)+P(B)-P(A∩B); P(Aᶜ)=1-P(A)",
+       "contoh": "frekuensi relatif: P(hujan) = 9/31"
+      },
+      {
+       "concept": "Conditional probability",
+       "sumber": "[13] s10-13",
+       "definisi": "peluang A bila B diketahui terjadi",
+       "langkah": "P(A|B)=P(A,B)/P(B); chain rule untuk banyak event",
+       "catatan": "marginal: P(A) = Σ_B P(A,B) (sum rule)"
+      }
+     ]
+    },
+    {
+     "title": "Independensi",
+     "children": [
+      {
+       "concept": "Independence",
+       "sumber": "[13] s14-15",
+       "definisi": "mengetahui B tidak mengubah keyakinan tentang A",
+       "langkah": "cek P(A,B) = P(A)P(B)",
+       "pembeda": "mutually exclusive: P(A∩B) = 0, bukan independen"
+      },
+      {
+       "concept": "Conditional independence",
+       "sumber": "[13] s16",
+       "definisi": "setelah C diketahui, B tak menambah informasi tentang A",
+       "langkah": "P(A,B|C) = P(A|C)P(B|C)",
+       "contoh": "payung, aplikasi cuaca, dan hujan",
+       "catatan": "dasar asumsi naive pada Naive Bayes"
+      }
+     ]
+    },
+    {
+     "title": "Teorema",
+     "children": [
+      {
+       "concept": "Law of total probability",
+       "sumber": "[13] s39-40",
+       "definisi": "peluang marginal dari partisi kondisi saling lepas",
+       "langkah": "P(A) = Σ P(A|Ci)P(Ci)",
+       "contoh": "kacamata: 0,4·0,3 + 0,2·0,7 = 0,26"
+      },
+      {
+       "concept": "Bayes theorem",
+       "sumber": "[13] s41-46",
+       "definisi": "membalik arah conditional probability",
+       "langkah": "P(C|A) = P(A|C)P(C)/P(A)",
+       "contoh": "ws2: PPV 0,0049/0,05465 = 0,0897",
+       "jebakan": "prevalensi kecil membuat P(sakit|positif) kecil"
+      }
+     ]
+    },
+    {
+     "title": "Random variable",
+     "children": [
+      {
+       "concept": "Bernoulli dan Binomial",
+       "sumber": "[13] s18-26",
+       "definisi": "satu percobaan sukses/gagal; jumlah sukses n percobaan",
+       "langkah": "P(X=x) = C(n,x)pˣ(1-p)ⁿ⁻ˣ",
+       "contoh": "jumlah head pada n lemparan koin"
+      },
+      {
+       "concept": "Normal (Gaussian)",
+       "sumber": "[13] s27-29",
+       "definisi": "distribusi kontinu berbentuk lonceng N(μ,σ²)",
+       "langkah": "f(x) = e^(-(x-μ)²/2σ²)/(σ√2π)",
+       "jebakan": "density bisa lebih dari 1; bukan peluang titik"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "title": "i2. Likelihood dan Naive Bayes",
+   "children": [
+    {
+     "title": "Likelihood",
+     "children": [
+      {
+       "concept": "Likelihood",
+       "sumber": "[13] s31-37",
+       "definisi": "dukungan data terhadap nilai parameter θ",
+       "langkah": "L(θ|D) = Πp(xi|θ) untuk data i.i.d.",
+       "contoh": "cuaca 1 hujan dari 6: L(0,8) = 0,000256",
+       "pembeda": "probability: θ tetap, data berubah; likelihood sebaliknya"
+      },
+      {
+       "concept": "Log-likelihood",
+       "sumber": "[13] s36; [14] s10",
+       "definisi": "logaritma likelihood; perkalian menjadi penjumlahan",
+       "tujuan": "mencegah underflow dari perkalian angka kecil",
+       "catatan": "monoton: maksimumnya di θ yang sama"
+      },
+      {
+       "concept": "Maximum likelihood estimation",
+       "sumber": "[14] s11-13; ws2 Q3",
+       "definisi": "pilih θ yang memaksimalkan likelihood",
+       "contoh": "koin 8 head dari 12: θ=8/12=0,6667",
+       "catatan": "prior NB = empirical probability hasil MLE"
+      }
+     ]
+    },
+    {
+     "title": "Model Naive Bayes",
+     "children": [
+      {
+       "concept": "Asumsi naive dan posterior",
+       "sumber": "[14] s5-9, s15",
+       "definisi": "generative classifier berbasis Bayes theorem",
+       "asumsi": "fitur independen bersyarat terhadap kelas",
+       "langkah": "P(c|x) ∝ P(c)ΠP(x_d|c); pilih argmax",
+       "pembeda": "discriminative (k-NN) memodelkan posterior langsung",
+       "catatan": "P(x) boleh diabaikan saat argmax"
+      }
+     ]
+    },
+    {
+     "title": "Training dan prediksi",
+     "children": [
+      {
+       "concept": "Naive Bayes kategorikal",
+       "sumber": "[14] s11-13, s18-22, s28-34",
+       "definisi": "estimasi prior dan class conditional dari frekuensi",
+       "langkah": "P(c) = Nc/N; P(x_d=k|c) = N_dck/Nc",
+       "contoh": "P(ya) = 9/14; P(olahraga|ya) = 3/9"
+      },
+      {
+       "concept": "Gaussian Naive Bayes",
+       "sumber": "[14] s14, s23-34",
+       "definisi": "fitur numerik diasumsikan normal di tiap kelas",
+       "langkah": [
+        "Hitung μ dan σ² per kelas",
+        "Density N(x; μ, σ²) per kelas",
+        "Kalikan dengan prior dan fitur lain, argmax"
+       ],
+       "contoh": "P(60|ya) = N(60; 73, 38) ≈ 0,007",
+       "jebakan": "cek pembagi variance yang diminta soal"
+      }
+     ]
+    },
+    {
+     "title": "Masalah Naive Bayes",
+     "children": [
+      {
+       "concept": "Zero-frequency dan Laplace",
+       "sumber": "[14] s36-37",
+       "definisi": "frekuensi nol membuat posterior menjadi nol",
+       "langkah": "(N_dck+1)/(Nc+K), K=jumlah kategori fitur",
+       "contoh": "keilmuan|tidak = (1+0)/(3+5)",
+       "jebakan": "smoothing diterapkan ke semua kelas, bukan satu"
+      },
+      {
+       "concept": "Missing dan mixed-type",
+       "sumber": "[14] s38-41",
+       "definisi": "fitur hilang dan campuran numerik-kategorikal",
+       "langkah": "missing: abaikan suku fitur; campuran: P(Xn|y)P(Xc|y)",
+       "jenis": "varian NB: Gaussian, Multinomial, Bernoulli, Categorical"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

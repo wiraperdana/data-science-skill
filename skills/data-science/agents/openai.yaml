@@ -1,0 +1,4 @@
+interface:
+  display_name: "KASDAD Data Science"
+  short_description: "Materi, soal, dan pipeline KASDAD berbasis slide dan catatan kuliah Wira"
+  default_prompt: "Gunakan korpus KASDAD untuk menjawab ini dengan rujukan nomor slide atau catatan kelas yang tepat."

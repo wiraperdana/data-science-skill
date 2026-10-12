@@ -1,0 +1,159 @@
+\documentclass[8pt]{extarticle}
+\usepackage[a4paper,margin=6mm,top=6mm,bottom=7mm]{geometry}
+\usepackage{multicol,amsmath,amssymb}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{array}
+\setlength{\columnsep}{3.5mm}
+\setlength{\columnseprule}{0.2pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0.6pt}
+\pagestyle{empty}
+\setlist{nosep,leftmargin=3mm,label=\textbullet}
+\newcommand{\sect}[1]{\par\vspace{1.5pt}\colorbox{black!12}{\parbox{\dimexpr\columnwidth-2\fboxsep}{\textbf{#1}}}\par\vspace{0.8pt}}
+\newcommand{\sub}[1]{\textbf{#1}\;}
+\renewcommand{\arraystretch}{1.05}
+\begin{document}
+\fontsize{7.9}{9.0}\selectfont\raggedright\setlength{\emergencystretch}{1em}
+\begin{multicols*}{3}
+\textbf{UTS KASDAD} \hfill \textit{sisi 1 / 2, salin tulisan tangan}\par
+\sect{0. Aturan main hitungan}
+\begin{itemize}
+\item Bulatkan \textbf{di akhir}, 4 desimal. Isian SCeLE pakai titik. Nilai sangat kecil: tulis mantisa sesuai ``$\times10^{-k}$''.
+\item Cek pembagi: kovarians/var \textbf{$n-1$} (worksheet) vs $N$ (slide [06] s7). Gaussian NB ws2: pembagi $n$. Ikuti soal.
+\item Kelas positif = kelas yang \emph{penting} (ilegal, sakit, fraud).
+\item $\log_2 x=\ln x/0{,}6931$. \ $1/\sqrt{2\pi}=0{,}3989$.
+\item Imbalanced: accuracy \textbf{dilarang}, stratified \textbf{wajib}, resampling/scaling/imputasi di-fit di \textbf{train} saja.
+\item Cek silang: $\sum\lambda=\mathrm{trace}$, kolom terpusat jumlah 0, posterior ternormalisasi jumlah 1, $|r|\le1$, Gini anak $\le$ induk.
+\end{itemize}
+
+\sect{a. AI dan Data Science}
+\begin{tabular}{@{}>{\raggedright}p{0.17\columnwidth}|>{\raggedright}p{0.33\columnwidth}|>{\raggedright\arraybackslash}p{0.38\columnwidth}@{}}
+ & \textbf{Humanly} & \textbf{Rationally}\\\hline
+Thinking & cognitive modeling & laws of thought (logika)\\
+Acting & Turing test & agen rasional\\
+\end{tabular}
+\begin{itemize}
+\item Kritik: humanly = meniru manusia (pesawat $\ne$ burung); logika tak scalable; agen rasional paling bisa dimodelkan matematis.
+\item Agent function $f:\mathcal P^*\to\mathcal A$; agent program = implementasinya. Rasional = maks. \emph{expected performance}.
+\item \textbf{PEAS}: Performance, Environment, Actuators, Sensors.
+\item Lingkungan: fully/partially observable, single/multi-agent, deterministic/stochastic, episodic/sequential, static/dynamic, discrete/continuous, known/unknown. \textbf{Taksi}: partial, multi, nondet, sequential, dynamic, continuous. Catur pakai jam: semi-dynamic.
+\item Agen: simple reflex (aturan kondisi-aksi) $\to$ model-based (state internal) $\to$ goal-based (search/planning) $\to$ utility-based (maks. expected utility); learning agent: performance element + learning element + critic.
+\item Supervised (label; $y$ diskret = klasifikasi, kontinu = regresi), unsupervised (clustering), reinforcement (reward). ML = Representation + Evaluation + Optimization.
+\item Analytics: descriptive (apa), diagnostic (mengapa), predictive (akan apa), prescriptive (harus apa). Big Data 6V: volume, velocity, variety, veracity, value, variability.
+\item CRISP-DM: business und. $\leftrightarrow$ data und. $\to$ data prep $\leftrightarrow$ modeling $\to$ evaluation $\to$ deployment. KDD: selection $\to$ preprocessing $\to$ transformation $\to$ data mining $\to$ interpretation.
+\end{itemize}
+
+\sect{b. EDA dan data preparation}
+\begin{itemize}
+\item Median: urutkan, posisi $(n{+}1)/2$; $n$ genap rata-rata posisi $n/2,\,n/2{+}1$. Mode = frekuensi terbanyak. Range $=(\max-\min)$ (slide: $+1$ unit, contoh tanpa).
+\item \sub{Kuartil}$Q_1$ = median separuh bawah, $Q_3$ = median separuh atas (median data \emph{tidak ikut} bila $n$ ganjil). $IQR=Q_3-Q_1$.
+\item \sub{Outlier}$RLB=Q_1-1{,}5\,IQR$, \ $RUB=Q_3+1{,}5\,IQR$. Boxplot: min, $Q_1$, median, $Q_3$, max.
+\item $s^2=\frac{\sum(x-\bar x)^2}{n-1}$. Skew $=\frac{\sum(x-\bar x)^3}{ns^3}$: $>0$ ekor kanan (mean $>$ median). Kurtosis $=\frac{\sum(x-\bar x)^4}{ns^4}$: normal 3, $<3$ platy, $>3$ lepto (outlier).
+\item Pearson $r=\frac{\sum(x-\bar x)(y-\bar y)}{\sqrt{\sum(x-\bar x)^2\sum(y-\bar y)^2}}\in[-1,1]$; $\chi^2=\sum\frac{(O-E)^2}{E}$, $E=\frac{\text{baris}\times\text{kolom}}{N}$. Dipakai deteksi redundansi (integrasi).
+\item \sub{Scaling}simple $x/x_{\max}$; min-max $\frac{x-\min}{\max-\min}\in[0,1]$; z-score $\frac{x-\mu}{\sigma}$. Wajib untuk KNN/PCA, tidak perlu untuk tree.
+\item \sub{Missing}(1) tanya pengumpul data (2) drop baris/kolom (3) isi mean (numerik), mode (kategorikal), konstanta, nearest neighbor, fungsi/domain (4) biarkan. Muncul sebagai ``?'', N/A, 0, kosong.
+\item \sub{Noisy}binning (smooth by mean/median/boundary), regresi, clustering, inspeksi manusia+komputer. Inkonsisten $\to$ data formatting.
+\item Integration: schema integration, entity identification, konflik nilai, redundansi ($r$, $\chi^2$). Reduction: data cube, sampling, kompresi. Discretization: binning equal-frequency.
+\end{itemize}
+
+\sect{c. Feature engineering, selection, PCA}
+\begin{itemize}
+\item Creation: domain, data-driven, aggregation, differences/ratios, age encoding (durasi hari), indicator (0/1 kondisi), binarization ($x>t\Rightarrow1$), binning, BoW.
+\item Encoding: one-hot (nominal, kategori sedikit; jarak Manhattan antarkategori $=2$); label/ordinal (berurutan); frequency (hitung kemunculan; dua kategori sama frekuensi tak terbedakan); target: regresi = mean $y$ per kategori, klasifikasi = $P(y{=}1|k)$, berbobot $\frac{n\cdot\bar y_k+m\cdot\bar y}{n+m}$ (rawan leakage/overfit).
+\item Filter (cepat, sebelum model): missing ratio, variance threshold (normalisasi dulu), korelasi fitur-target $\approx0$ buang, antar fitur tinggi ambil satu, $\chi^2$, IG. Wrapper: SFS (tambah terbaik), SBS (buang terburuk), SFFS (tambah lalu buang bersyarat), exhaustive, RFE. Embedded: tree, Lasso ($w=0$).
+\item $H=-\sum p\log_2p$; \ $IG(A)=H(S)-\sum_v\frac{|S_v|}{|S|}H(S_v)$.
+\end{itemize}
+\textbf{$-p\log_2p$}: \ $\tfrac12$ .5000 \ $\tfrac13$ .5283 \ $\tfrac23$ .3900 \ $\tfrac14$ .5000 \ $\tfrac34$ .3113 \ $\tfrac15$ .4644 \ $\tfrac25$ .5288 \ $\tfrac35$ .4422 \ $\tfrac45$ .2575 \ $\tfrac16$ .4308 \ $\tfrac56$ .2192 \ $\tfrac18$ .3750 \ $\tfrac38$ .5306 \ $\tfrac58$ .4238 \ $\tfrac78$ .1686.\ $H(\tfrac13,\tfrac23)$=.9183, $H(\tfrac14,\tfrac34)$=.8113, $H(\tfrac25,\tfrac35)$=.9710, $H(\tfrac15,\tfrac45)$=.7219, $H(\tfrac38,\tfrac58)$=.9544.
+\begin{itemize}
+\item \sub{PCA}(1) $X_c=X-\mu$ (2) $S=\frac{X_c^TX_c}{n-1}$ (3) $\det(S-\lambda I)=0$, $Sv=\lambda v$ (4) urutkan $\lambda$ turun (5) $Z=T\,X_c^T$, $T$ = eigenvector sebagai \emph{baris} ($k\times p$), $Z$: $k\times n$.
+\item $2\times2$: $\lambda=\frac{tr\pm\sqrt{tr^2-4\det}}{2}$; $v\propto(b,\ \lambda-a)$ untuk $S=\begin{bmatrix}a&b\\b&d\end{bmatrix}$, normalkan $\|v\|=1$. Matriks blok-diagonal: eigen per blok; variabel tak berkorelasi $\Rightarrow\lambda$ = variansinya, $v$ = sumbu itu.
+\item $EV_k=\lambda_k/\sum\lambda$; pilih $k$ terkecil dengan kumulatif $\ge$ ambang.
+\item Rekonstruksi $\hat x=T^Tz+\mu$; $SSE=(n-1)\sum\lambda_{\text{dibuang}}$; $MSE=SSE/(n\,p)$. Tanda eigenvector boleh dibalik (skor ikut berbalik).
+\item Curse of dimensionality (Hughes). t-SNE: proyeksi nonlinear untuk visualisasi (PCA dulu ke $\pm50$).
+\end{itemize}
+
+\sect{d. CART dan Random Forest}
+\begin{itemize}
+\item Gini $=1-\sum p_c^2$; entropy $=-\sum p\log p$; pure = 0. Cost split $=\frac{|D_1|}{|D|}G_1+\frac{|D_2|}{|D|}G_2$, pilih \textbf{min}.
+\item Numerik: urutkan, kandidat = midpoint ($n_{\text{unik}}-1$ buah), uji $\le t$ vs $>t$. Kategorikal $k$ nilai: partisi biner ``$=t$ vs $\ne t$'' ($k$ buah).
+\item Urutan: Gini root $\to$ cost tiap fitur/threshold $\to$ root = cost min $\to$ anak pure jadi leaf $\to$ ulangi di anak impure $\to$ prediksi = mayoritas leaf.
+\item Regression tree: cost $=\frac1{|D|}\sum(y-\bar y)^2$ dibobot; leaf = rata-rata $y$.
+\item Hyperparameter: max\_depth, \allowbreak min\_samples\_split, \allowbreak min\_samples\_leaf, \allowbreak max\_features, \allowbreak max\_leaf\_nodes. Parameter = hasil training (struktur, split).
+\item Plus: mudah dibaca, tanpa standardisasi, robust outlier, feature selection otomatis, surrogate split untuk missing. Minus: greedy, tidak stabil (\textbf{high variance}).
+\item Ensemble: regresi rata-rata, klasifikasi majority vote, stacking (bobot). Bagging: bootstrap $N$ sampel \emph{dengan pengembalian}; $\pm63\%$ unik, $\pm37\%$ out-of-bag (uji).
+\item RF: bootstrap + tiap \textbf{node} pilih $d\ll D$ fitur acak $\Rightarrow$ tree kurang berkorelasi. Hyper: n\_estimators, max\_samples (+ hyper tree). $d=D$ = bagging biasa.
+\end{itemize}
+
+\end{multicols*}
+\newpage
+\begin{multicols*}{3}
+\textbf{UTS KASDAD} \hfill \textit{sisi 2 / 2}\par
+\sect{e. Evaluasi model}
+\begin{tabular}{@{}c|cc@{}}
+aktual$\backslash$pred & + & $-$\\\hline
++ & TP & FN\\
+$-$ & FP & TN
+\end{tabular}\quad
+\par Acc $\frac{TP+TN}{\text{total}}$; Prec $\frac{TP}{TP+FP}$; Rec/TPR $\frac{TP}{TP+FN}$; Spec $\frac{TN}{TN+FP}$; FPR $=1-$Spec.\par
+\begin{itemize}
+\item $F_1=\frac{2PR}{P+R}$; $F_\beta=\frac{(1+\beta^2)PR}{\beta^2P+R}$ ($\beta>1$ recall, $<1$ precision); G-mean $=\sqrt{\text{sens}\times\text{spec}}$; Brier $=\frac1N\sum(f_t-o_t)^2$.
+\item ROC: TPR vs FPR di semua threshold; AUC tak bergantung threshold. PR-AUC bila positif lebih penting. Threshold tinggi: FP turun, FN naik.
+\item Multikelas OvR. Macro = rata-rata metrik per kelas tanpa bobot. Micro = dari total TP, FP, FN (micro P = R = F1).
+\item MAE $\frac1n\sum|y-\hat y|$; MSE $\frac1n\sum(y-\hat y)^2$; RMSE $\sqrt{MSE}$; $R^2=1-\frac{\sum(y-\hat y)^2}{\sum(y-\bar y)^2}$ (negatif = sangat buruk). Residual harus acak.
+\item Holdout; train/val/test (val untuk tuning, test sekali); random subsampling; $K$-fold: uji $N/K$, latih $N(K-1)/K$, rata-rata error; LOOCV $K=N$ (data kecil). $K$ besar: bias kecil, variance besar. Umum $K=10$.
+\item Testing NOs: uji di data latih, tuning pakai test.
+\item Uji t: $H_0$, $H_1$, $\alpha$ $\to$ $S_p^2=\frac{(n-1)S_1^2+(m-1)S_2^2}{n+m-2}$, $TS=\frac{\bar X_1-\bar X_2}{\sqrt{S_p^2(\frac1n+\frac1m)}}$, $df=n+m-2$ $\to$ bandingkan dengan daerah tolak.
+\end{itemize}
+
+\sect{f. Bias-variance tradeoff}
+\begin{itemize}
+\item $y=f(x)+\varepsilon$; $MSE=\mathrm{Bias}^2+\mathrm{Var}+\sigma^2$ ($\sigma^2$ irreducible = batas bawah).
+\item Underfit: train \& test error tinggi, dekat (high bias) $\to$ model lebih kompleks. Overfit: train sangat rendah, test tinggi (high variance) $\to$ pruning, regularisasi, ensemble, tambah data.
+\item Fleksibel $\uparrow$: bias $\downarrow$ var $\uparrow$. k-NN: $k\uparrow$ bias $\uparrow$ var $\downarrow$. Regularisasi: bias $\uparrow$ var $\downarrow$. Tree dangkal high bias, dalam high variance.
+\item Pre-pruning (kriteria heuristik: min sampel, max leaf, max depth) lebih cepat; post-pruning (tumbuh penuh lalu merge subtree).
+\item Bagging/RF paralel, turunkan var: $\mathrm{Var}(\bar y)=\sigma^2/k$. Boosting serial, turunkan bias: AdaBoost (salah $\to$ bobot naik, resample, weighted vote), Gradient Boosting (awal = mean $y$, latih residual, jumlahkan $\alpha\times$output), XGBoost.
+\end{itemize}
+
+\sect{g. KNN}
+\begin{itemize}
+\item Manhattan $\sum|p-q|$; Euclid $\sqrt{\sum(p-q)^2}$; cosine $\frac{p\cdot q}{\|p\|\|q\|}$; Jaccard $\frac{|p\cap q|}{|p\cup q|}$ (biner). Jarak kecil = dekat; similarity besar = dekat.
+\item Langkah: pilih $K$ $\to$ jarak ke semua data latih $\to$ $K$ terdekat $\to$ vote (klasifikasi) atau $\hat y=\frac1K\sum y$ (regresi). Tuliskan tabel jarak terurut; cek $K=3$ vs $K=5$.
+\item $K=1$ rentan noise, $K$ besar hilang lokalitas, pilih via CV. Wajib normalisasi; nominal one-hot. Tanpa training, testing $O(knd)$.
+\end{itemize}
+
+\sect{h. Imbalanced classification}
+\begin{itemize}
+\item Slight 4:6, severe $\ge$1:100. Solusi: evaluasi (metrik, stratified), algoritma (cost-sensitive), data (over/undersampling).
+\item Bobot \texttt{balanced}: $w_c=\frac{n}{n_{\text{kelas}}\cdot n_c}$. Cost awal = kebalikan rasio (1:100 $\Rightarrow$ FN 100, FP 1). Total cost $=c_{FN}FN+c_{FP}FP$.
+\item Stratified: tiap fold memuat $1/K$ dari tiap kelas.
+\item SMOTE: $s=\lambda a+(1-\lambda)b$, $0\le\lambda\le1$ (atau $a+\text{gap}\cdot\text{diff}$). Cek titik: $\lambda=\frac{s-b}{a-b}$ harus \textbf{sama} di semua fitur dan di $[0,1]$.
+\item Borderline-SMOTE ($k$ tetangga): \#maj $=k$ noise; $k/2\le$\#maj$<k$ \textbf{borderline} (di-SMOTE); \#maj $<k/2$ safe. SVM-varian pakai support vector. ADASYN: bobot $\propto\frac{\#\text{maj}}{\#\text{min}}$.
+\item Under-\emph{keep}: NearMiss-1 (rata-rata jarak ke 3 minoritas terdekat terkecil), -2 (ke 3 terjauh terkecil), -3 (terdekat per minoritas); CNN (1-NN, yang salah masuk subset). Under-\emph{delete}: Tomek ($NN(a)=b$, $NN(b)=a$, beda kelas, hapus mayoritas); ENN (3-NN salah klasifikasi dihapus). OSS = Tomek+CNN; NCR = CNN+ENN; SMOTE+Tomek, SMOTE+ENN.
+\item Sampling \textbf{hanya} di data training (imblearn Pipeline), bukan test.
+\end{itemize}
+
+\sect{i. Probabilitas, likelihood, Naive Bayes}
+\begin{itemize}
+\item $P(A\cup B)=P(A)+P(B)-P(A\cap B)$; $P(A^c)=1-P(A)$; $P(A|B)=\frac{P(A,B)}{P(B)}$; chain $P(A,B,C)=P(C|A,B)P(B|A)P(A)$.
+\item Independen: $P(A,B)=P(A)P(B)$ ($\ne$ mutually exclusive: $P(A\cap B)=0$). Bersyarat: $P(A,B|C)=P(A|C)P(B|C)$; keduanya \emph{tidak} saling menyiratkan.
+\item Total: $P(A)=\sum_iP(A|C_i)P(C_i)$. Bayes: $P(C|A)=\frac{P(A|C)P(C)}{P(A)}$. PPV kecil bila prevalensi kecil.
+\item Bernoulli $p^x(1-p)^{1-x}$; Binomial $\binom nx p^x(1-p)^{n-x}$; Normal $f(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$ (density bisa $>1$).
+\item Likelihood $L(\theta|D)=\prod p(x_i|\theta)$ (data tetap, $\theta$ berubah); $\log L=\sum\log p$ (cegah underflow); MLE koin $\hat\theta=k/n$.
+\item NB (generative): $P(c|x)\propto P(c)\prod_dP(x_d|c)$, ambil argmax, $P(x)$ boleh diabaikan; normalisasi: bagi jumlah skor semua kelas.
+\item Training: prior $N_c/N$; kategorikal $N_{dck}/N_c$; numerik $\mu_{dc},\sigma^2_{dc}$ per kelas. Laplace: $\frac{N_{dck}+1}{N_c+K}$ ($K$ = jumlah kategori fitur), terapkan ke \textbf{semua} kelas.
+\item Zero-frequency $\Rightarrow$ posterior 0. Missing di data uji: abaikan sukunya. Campuran: $P(X|y)=P(X_n|y)P(X_c|y)$. Varian: Gaussian, Multinomial (hitungan), Bernoulli (biner), Categorical.
+\end{itemize}
+
+\sect{Urutan isian soal berantai (worksheet)}
+\begin{itemize}
+\item \textbf{PCA}: mean tiap var $\to$ $X_c$ (cek jumlah 0) $\to$ var, cov ($n-1$) $\to$ $\det(S-\lambda I)$ per blok $\to$ $\lambda$ urut $\to$ $v$ ($\|v\|=1$, tanda sesuai soal) $\to$ $\sum\lambda$, EV, kumulatif, $k$ $\to$ ukuran $T$, $Z$ $\to$ skor $z=v\cdot x'$ $\to$ $SSE$, $MSE$.
+\item \textbf{CART}: hitung kelas $\to$ Gini root $\to$ tiap fitur: Gini anak, cost $\to$ kategorikal: $k$ partisi $\to$ numerik: midpoint, cost $\to$ root = min $\to$ leaf pure $\to$ split anak impure $\to$ prediksi data baru.
+\item \textbf{Metrik dari narasi}: tentukan kelas positif dulu $\to$ isi TP, FN, FP, TN (cek jumlah = total) $\to$ metrik.
+\item \textbf{Bayes test}: $P(S)$, sens $=P(+|S)$, spec $=P(-|\neg S)$ $\to$ $P(+)$ via total $\to$ $P(S|+)$; $P(S|-)=\frac{(1-\text{sens})P(S)}{1-P(+)}$.
+\item \textbf{Naive Bayes}: prior $\to$ $P(x_d|c)$ kategorikal (Laplace bila ada 0, ke semua kelas) $\to$ $\mu,\sigma^2$ per kelas $\to$ $f(x|c)$ $\to$ skor $=P(c)\prod$ $\to$ normalisasi $\to$ argmax.
+\item \textbf{KNN}: tabel jarak semua titik, urutkan, tandai kelas $\to$ vote $K=3$, $K=5$ $\to$ regresi rata-rata.
+\end{itemize}
+\end{multicols*}
+\end{document}

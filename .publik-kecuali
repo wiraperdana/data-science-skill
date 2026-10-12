@@ -1,0 +1,6 @@
+# Path yang tidak ikut ke repo publik (wiraperdana/kasdad-skill).
+# Isinya materi pihak ketiga: slide dosen, worksheet, soal, catatan kelas,
+# ekstrak teks slide, dan transkripsi isi slide bergambar.
+sources/files
+sources/text
+mindmap/transkripsi.json

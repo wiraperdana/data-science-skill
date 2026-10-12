@@ -1,0 +1,267 @@
+{
+  "schema_version": 1,
+  "keterangan": "Peta topik KASDAD. Tiap aturan mencocokkan potongan path relatif berkas di folder kuliah, huruf kecil. Satu berkas boleh masuk beberapa topik. Berkas tanpa kecocokan dicatat dengan topik 'unassigned' dan wajib dipetakan di sini sebelum dipakai sebagai rujukan.",
+  "topics": [
+    {
+      "id": "00",
+      "title": "Course info dan silabus",
+      "match": [
+        "[00]",
+        "silabus"
+      ]
+    },
+    {
+      "id": "01",
+      "title": "What is AI",
+      "match": [
+        "[01]",
+        "- 1 - 24 agustus"
+      ]
+    },
+    {
+      "id": "02",
+      "title": "What is Data Science",
+      "match": [
+        "[02]",
+        "- 2 - 26 agustus",
+        "02-what-is-data-science"
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Data collection, EDA, statistik deskriptif, visualisasi",
+      "match": [
+        "[03]",
+        "- 3 - 31 agustus",
+        "- 4 - 2 september"
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Data preparation",
+      "match": [
+        "[04]",
+        "- 4 - 2 september"
+      ]
+    },
+    {
+      "id": "05",
+      "title": "Feature engineering dan feature selection",
+      "match": [
+        "[05]",
+        "- 5 - 7 september"
+      ]
+    },
+    {
+      "id": "06",
+      "title": "Dimensionality reduction dan PCA",
+      "match": [
+        "[06]",
+        "- 6 - 9 september",
+        "- 7 - latihan pca",
+        "soal-pca",
+        "jawaban-soal-pca",
+        "worksheet.png",
+        "jawaban-worksheet-pca-cart"
+      ]
+    },
+    {
+      "id": "07a",
+      "title": "CART, classification dan regression tree",
+      "match": [
+        "[07a]",
+        "- 7 - latihan pca",
+        "- 8 - decision tree",
+        "worksheet.png",
+        "jawaban-worksheet-pca-cart"
+      ]
+    },
+    {
+      "id": "08",
+      "title": "Random Forest dan ensemble",
+      "match": [
+        "[08]",
+        "- 8 - decision tree",
+        "jawaban-worksheet-pca-cart"
+      ]
+    },
+    {
+      "id": "09",
+      "title": "Supervised model evaluation dan metrik",
+      "match": [
+        "[09]",
+        "- 8 - decision tree",
+        "metrik evaluasi",
+        "soal-09",
+        "topik-09-12"
+      ]
+    },
+    {
+      "id": "10",
+      "title": "Bias-variance tradeoff, regularisasi, boosting",
+      "match": [
+        "[10]",
+        "- 8 - decision tree",
+        "soal-10",
+        "topik-09-12"
+      ]
+    },
+    {
+      "id": "11",
+      "title": "KNN classification dan regression",
+      "match": [
+        "[11]",
+        "[11a]",
+        "kasdad - knn",
+        "soal-11",
+        "topik-09-12"
+      ]
+    },
+    {
+      "id": "12",
+      "title": "Imbalanced classification",
+      "match": [
+        "[12]",
+        "imbalance classification",
+        "imbalanced classification",
+        "soal-12",
+        "topik-09-12"
+      ]
+    },
+    {
+      "id": "13",
+      "title": "Probability, likelihood, Bayes theorem",
+      "match": [
+        "[13]",
+        "ws2/",
+        "jawaban-ws2"
+      ]
+    },
+    {
+      "id": "14",
+      "title": "Naive Bayes",
+      "match": [
+        "[14]",
+        "naive bayes",
+        "ws2/",
+        "jawaban-ws2"
+      ]
+    },
+    {
+      "id": "kuis",
+      "title": "Pembahasan kuis lintas topik",
+      "match": [
+        "pembahasan kuis"
+      ]
+    },
+    {
+      "id": "tugas",
+      "title": "Tugas pemrograman (TP)",
+      "match": [
+        "tugas kelompok programming"
+      ]
+    }
+  ],
+  "kinds": [
+    {
+      "kind": "assignment",
+      "match": [
+        "tugas kelompok programming"
+      ],
+      "ext": [
+        ".pdf"
+      ]
+    },
+    {
+      "kind": "practice-set",
+      "match": [
+        "_output/soal-"
+      ],
+      "ext": [
+        ".md",
+        ".pdf"
+      ]
+    },
+    {
+      "kind": "worked-answer",
+      "match": [
+        "jawaban-"
+      ],
+      "ext": [
+        ".md",
+        ".html"
+      ]
+    },
+    {
+      "kind": "exercise",
+      "match": [
+        "soal-pca",
+        "worksheet.png",
+        "ws2/"
+      ],
+      "ext": [
+        ".pdf",
+        ".png"
+      ]
+    },
+    {
+      "kind": "syllabus",
+      "match": [
+        "silabus"
+      ],
+      "ext": [
+        ".md"
+      ]
+    },
+    {
+      "kind": "raw-transcript",
+      "match": [
+        "_raw/"
+      ],
+      "ext": [
+        ".md"
+      ]
+    },
+    {
+      "kind": "lecture-note-comprehensive",
+      "match": [
+        "komprehensif"
+      ],
+      "ext": [
+        ".md"
+      ]
+    },
+    {
+      "kind": "lecture-note",
+      "match": [
+        "notes/"
+      ],
+      "ext": [
+        ".md"
+      ]
+    },
+    {
+      "kind": "slide",
+      "match": [
+        "["
+      ],
+      "ext": [
+        ".pdf"
+      ]
+    }
+  ],
+  "include": [
+    "*.pdf",
+    "*.PDF",
+    "silabus-*.md",
+    "worksheet.png",
+    "notes/*.md",
+    "ws*/*.png",
+    "_raw/0*.md",
+    "_output/jawaban-*.md",
+    "_output/soal-*.md",
+    "_output/soal-*.pdf",
+    "labs/tugas kelompok programming/*/TP *.pdf",
+    "_output/jawaban-*.html"
+  ]
+}
