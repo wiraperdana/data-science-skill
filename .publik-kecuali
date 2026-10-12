@@ -4,3 +4,7 @@
 sources/files
 sources/text
 mindmap/transkripsi.json
+# Berkas taksonomi Personal-OS, tidak ikut repo publik (pola Products/sbm).
+AGENTS.md
+CLAUDE.md
+STATUS.md

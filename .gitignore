@@ -7,3 +7,6 @@ __pycache__/
 sources/files
 sources/text
 mindmap/transkripsi.json
+AGENTS.md
+CLAUDE.md
+STATUS.md
